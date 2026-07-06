@@ -1,0 +1,8 @@
+/* Booking form input styles — scoped to book page */
+.input {
+  @apply w-full bg-white border border-soul/15 rounded-sm px-4 py-3
+         font-body text-body-lg text-soul
+         placeholder:text-sage/60
+         focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold
+         transition-colors duration-150;
+}
