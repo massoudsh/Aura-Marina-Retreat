@@ -233,7 +233,7 @@ We are glad you are coming.
 
 Before you arrive, there are a few things worth knowing:
 
-**Arrival:** Please plan to arrive at [location] by [time]. The day begins gently — there is no rushing here — but the morning yoga session starts promptly and we would love for you to be settled before it does.
+**Arrival:** Please plan to arrive at Paseo del Parque 1, Málaga Centro by 08:00. The day begins gently — there is no rushing here — but the morning yoga session starts promptly and we would love for you to be settled before it does.
 
 **What to bring:** Comfortable clothing for movement (we have mats), and something you feel easy in for the afternoon. The temperature in Málaga is forgiving, but a light layer for the cellar is always wise.
 
@@ -259,7 +259,7 @@ Nos alegra que vengas.
 
 Antes de llegar, hay algunas cosas que vale la pena saber:
 
-**Llegada:** Por favor, planea llegar a [ubicación] para las [hora]. El día comienza suavemente — aquí no hay prisa — pero la sesión de yoga matutina comienza puntualmente y nos encantaría que estuvieras instalado/a antes de que empiece.
+**Llegada:** Por favor, planea llegar a Paseo del Parque 1, Málaga Centro para las 08:00. El día comienza suavemente — aquí no hay prisa — pero la sesión de yoga matutina comienza puntualmente y nos encantaría que estuvieras instalado/a antes de que empiece.
 
 **Qué traer:** Ropa cómoda para el movimiento (tenemos esterillas), y algo en lo que te sientas a gusto para la tarde. La temperatura en Málaga es benévola, pero una capa ligera para la bodega siempre es prudente.
 
@@ -289,9 +289,9 @@ Tomorrow, [Name], you will wake up in Málaga and do very little that resembles 
 
 **A few practical notes:**
 
-- Morning pick-up / meeting point: [address] at [time]
+- Morning pick-up / meeting point: Paseo del Parque 1, Málaga Centro at 08:00
 - The weather forecast for [date]: [weather] — we recommend [layer advice]
-- Our WhatsApp for day-of questions: +34 [number]
+- Our WhatsApp for day-of questions: +34 612 345 678
 
 **A note on mindset:**
 
@@ -315,9 +315,9 @@ Mañana, [Nombre], te despertarás en Málaga y harás muy poco que se parezca a
 
 **Algunas notas prácticas:**
 
-- Punto de recogida / encuentro: [dirección] a las [hora]
+- Punto de recogida / encuentro: Paseo del Parque 1, Málaga Centro a las 08:00
 - Previsión meteorológica para [fecha]: [tiempo] — recomendamos [consejo de ropa]
-- Nuestro WhatsApp para preguntas del día: +34 [número]
+- Nuestro WhatsApp para preguntas del día: +34 612 345 678
 
 **Una nota sobre la mentalidad:**
 

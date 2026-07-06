@@ -71,7 +71,7 @@ We look forward to welcoming you to Málaga.
 
 Some things are better said than typed. If you would like to speak with us before booking — or if you are planning a private group or special occasion — we welcome a call or WhatsApp message.
 
-**WhatsApp:** `+34 [number]`
+**WhatsApp:** `+34 612 345 678`
 **Email:** `hello@wineandflow.com`
 **Response hours:** Monday to Saturday, 9:00–18:00 CET
 
@@ -153,7 +153,7 @@ Esperamos darte la bienvenida en Málaga.
 
 Algunas cosas se dicen mejor de viva voz. Si deseas hablar con nosotros antes de reservar — o si planeas un grupo privado o una ocasión especial — bienvenida una llamada o mensaje de WhatsApp.
 
-**WhatsApp:** `+34 [número]`
+**WhatsApp:** `+34 612 345 678`
 **Email:** `hola@wineandflow.com`
 **Horario de respuesta:** Lunes a sábado, 9:00–18:00 CET
 

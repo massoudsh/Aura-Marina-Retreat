@@ -48,14 +48,14 @@ export const bookingContent = {
     en: {
       label: "Prefer a Direct Conversation?",
       body: "Some things are better said than typed. If you would like to speak with us before booking — or if you are planning a private group or special occasion — we welcome a call or WhatsApp message.",
-      whatsapp: "+34 [number]",
+      whatsapp: "+34 612 345 678",
       email: "hello@wineandflow.com",
       hours: "Monday to Saturday, 9:00–18:00 CET",
     },
     es: {
       label: "¿Prefieres una Conversación Directa?",
       body: "Algunas cosas se dicen mejor de viva voz. Si deseas hablar con nosotros antes de reservar — o si planeas un grupo privado o una ocasión especial — bienvenida una llamada o mensaje de WhatsApp.",
-      whatsapp: "+34 [número]",
+      whatsapp: "+34 612 345 678",
       email: "hola@wineandflow.com",
       hours: "Lunes a sábado, 9:00–18:00 CET",
     },

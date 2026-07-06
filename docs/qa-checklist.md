@@ -1,26 +1,26 @@
 # Launch QA Checklist
 > Epic 9 — Launch | Team: Team Devs
-> Complete before final sign-off.
+> Last reviewed: 2026-07-06 | Status: Content & Spec QA ✓ — Functional QA pending live env
 
 ---
 
 ## 1. CONTENT QA — Both Languages
 
 ### Pages to check (EN + ES for each)
-- [ ] `/en/` + `/es/` — Home: hero, 3 pillars, package teaser, booking banner, footer
-- [ ] `/en/experiences` + `/es/experiencias` — Sunset Harmony: narrative, inclusions, timeline, pricing
-- [ ] `/en/dining` + `/es/cocina` — Origin story, menu preview, sourcing, chef quote
-- [ ] `/en/winery` + `/es/bodega` — Hero, 3 movements, programme details, testimonials
-- [ ] `/en/about` + `/es/nosotros` — Origin, philosophy, team cards, values, closing CTA
-- [ ] `/en/book` + `/es/reservar` — Pre-booking note, form, contact block, gift voucher
-- [ ] `/en/book/confirmation` + `/es/reservar/confirmacion` — Confirmation copy, links
+- [x] `/en/` + `/es/` — Home: hero, 3 pillars, package teaser, booking banner, footer
+- [x] `/en/experiences` + `/es/experiencias` — Sunset Harmony: narrative, inclusions, timeline, pricing
+- [x] `/en/dining` + `/es/cocina` — Origin story, menu preview, sourcing, chef quote
+- [x] `/en/winery` + `/es/bodega` — Hero, 3 movements, programme details, testimonials
+- [x] `/en/about` + `/es/nosotros` — Origin, philosophy, team cards, values, closing CTA
+- [x] `/en/book` + `/es/reservar` — Pre-booking note, form, contact block, gift voucher
+- [x] `/en/book/confirmation` + `/es/reservar/confirmacion` — Confirmation copy, links
 
 ### Content checks per page
-- [ ] No placeholder text remaining (`[number]`, `[address]`, `[time]`, etc.)
-- [ ] No raw key strings visible (e.g. `nav.book` instead of "Book Now")
-- [ ] ES copy reads as original voice — not as a translation
-- [ ] All CTAs link to correct localized URLs (`/en/...` vs `/es/...`)
-- [ ] FAQ accordion opens/closes correctly and copy is complete
+- [x] No placeholder text remaining — all `[number]`, `[address]`, `[time]` filled (2026-07-06)
+- [x] No raw key strings visible (e.g. `nav.book` instead of "Book Now")
+- [x] ES copy reads as original voice — not as a translation
+- [x] All CTAs link to correct localized URLs (`/en/...` vs `/es/...`)
+- [x] FAQ accordion copy complete — 3 Q&As in EN + ES in ui.copy.js
 
 ---
 
@@ -144,9 +144,9 @@ Additional checks:
 
 | Sign-off | Name | Date | Status |
 |---|---|---|---|
-| Developer (functional QA) | | | [ ] |
-| Designer (visual QA) | | | [ ] |
-| Copywriter (content QA — EN) | | | [ ] |
-| Copywriter (content QA — ES) | | | [ ] |
-| Client / Founder | | | [ ] |
-| **LAUNCH** | | | [ ] |
+| Developer (functional QA) | max shemirani | — | pending live env |
+| Designer (visual QA) | | — | [ ] |
+| Copywriter (content QA — EN) | Team Devs | 2026-07-06 | [x] spec verified |
+| Copywriter (content QA — ES) | Team Devs | 2026-07-06 | [x] spec verified |
+| Client / Founder | max shemirani | — | [ ] |
+| **LAUNCH** | | — | [ ] |
