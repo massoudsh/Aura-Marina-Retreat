@@ -1,0 +1,132 @@
+{
+  "_meta": {
+    "language": "en",
+    "version": "1.0",
+    "note": "All UI strings. Long-form page copy lives in src/pages/*.content.js"
+  },
+
+  "nav": {
+    "experience": "The Experience",
+    "dining": "Dining",
+    "winery": "The Winery",
+    "about": "Our Story",
+    "book": "Book Now",
+    "langToggle": "ES",
+    "langToggleAriaLabel": "Switch to Spanish"
+  },
+
+  "cta": {
+    "discover": "Explore the Experience",
+    "desire": "Reserve My Sanctuary Day",
+    "commit": "Secure My Place",
+    "gift": "Gift This Moment",
+    "urgent": "Book Now — Limited Spaces",
+    "beginJourney": "Begin Your Journey",
+    "learnMore": "Learn More",
+    "enquire": "Make an Enquiry",
+    "privateGroups": "Enquire About Private Groups",
+    "giftVouchers": "Enquire About Gift Vouchers",
+    "backHome": "Return to the Experience"
+  },
+
+  "hero": {
+    "home": {
+      "h1": "This Is Not a Tour. This Is a Transformation.",
+      "h2": "Wine & Flow is a curated sanctuary day in the heart of Málaga — crafted for those who seek presence, beauty, and the quiet luxury of being entirely here.",
+      "cta": "Begin Your Journey"
+    }
+  },
+
+  "booking": {
+    "formTitle": "Make Your Enquiry",
+    "submit": "Send My Enquiry",
+    "trustLine": "We read every message personally. You will hear from us within 24 hours.",
+    "fields": {
+      "name": "Full Name",
+      "namePlaceholder": "Your name",
+      "email": "Email Address",
+      "emailPlaceholder": "your@email.com",
+      "phone": "Phone (optional)",
+      "phonePlaceholder": "+1 / +44 / +34...",
+      "date": "Preferred Date",
+      "datePlaceholder": "Select a date",
+      "experience": "Experience",
+      "experienceOptions": [
+        "Sunset Harmony Package",
+        "Wine Workshop",
+        "Private Group",
+        "I'm not sure yet"
+      ],
+      "groupSize": "Group Size",
+      "groupSizeOptions": ["Just me", "2 people", "3–5", "6–10"],
+      "dietary": "Dietary Notes",
+      "dietaryPlaceholder": "Allergies, intolerances, or preferences",
+      "message": "Your Message",
+      "messagePlaceholder": "Tell us anything else — what brings you here, what you're hoping for..."
+    },
+    "confirmation": {
+      "heading": "We've Received Your Enquiry",
+      "body": "Thank you for reaching out. Someone from the Wine & Flow team will be in touch within 24 hours to confirm your space and answer any questions."
+    },
+    "prebookingNote": "Wine & Flow is a small, deeply intentional experience. We cap every session at ten guests — not as a marketing decision, but because anything larger would compromise the quality of what we offer.",
+    "contact": {
+      "heading": "Prefer a Direct Conversation?",
+      "body": "Some things are better said than typed. If you would like to speak with us before booking, we welcome a call or WhatsApp message.",
+      "hours": "Monday to Saturday, 9:00–18:00 CET"
+    }
+  },
+
+  "faq": {
+    "heading": "Common Questions",
+    "questions": [
+      {
+        "q": "What is the dress code?",
+        "a": "There is no formal dress code — only an invitation to dress for comfort and ease. We recommend layers you can move in freely for the yoga sessions, and something you feel graceful in for the dining experience."
+      },
+      {
+        "q": "Is this suitable for beginners?",
+        "a": "Absolutely. Wine & Flow is designed from the ground up for the curious, not the expert. Our yoga sessions are entirely accessible and our sommelier makes the world of wine feel welcoming rather than intimidating."
+      },
+      {
+        "q": "What if I have a dietary allergy or restriction?",
+        "a": "We ask all guests to share any allergies at the time of booking. Our chef designs around your needs. If you are unsure, please contact us directly before you arrive."
+      }
+    ]
+  },
+
+  "footer": {
+    "tagline": "Where the vine meets the soul — Málaga, Andalusia",
+    "socialProof": "Rated 5.0 · Trusted by guests from 24 countries",
+    "copyright": "© 2026 Wine & Flow. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "cookies": "Cookie Preferences",
+    "followUs": "Follow our Days",
+    "columns": {
+      "experiences": ["The Experience", "Dining", "The Winery", "Retreats"],
+      "company": ["About", "Press", "Gift Vouchers", "Sustainability"],
+      "contact": ["Contact", "WhatsApp", "Privacy Policy", "Terms"]
+    }
+  },
+
+  "errors": {
+    "fieldRequired": "This field is required.",
+    "emailInvalid": "Please enter a valid email address.",
+    "dateUnavailable": "This date is no longer available. Please select another.",
+    "formError": "Something went wrong. Please try again or contact us directly.",
+    "notFound": {
+      "heading": "You've Wandered Somewhere Beautiful.",
+      "sub": "But this page doesn't exist. Let us guide you back.",
+      "cta": "Return to the Experience"
+    }
+  },
+
+  "accessibility": {
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "lightboxClose": "Close image",
+    "lightboxNext": "Next image",
+    "lightboxPrev": "Previous image",
+    "skipToContent": "Skip to main content"
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "_meta": {
+    "language": "es",
+    "version": "1.0",
+    "note": "Contenido primario en español — no es una traducción, es una voz original."
+  },
+
+  "nav": {
+    "experience": "La Experiencia",
+    "dining": "Cocina",
+    "winery": "La Bodega",
+    "about": "Nuestra Historia",
+    "book": "Reservar",
+    "langToggle": "EN",
+    "langToggleAriaLabel": "Cambiar a inglés"
+  },
+
+  "cta": {
+    "discover": "Explora la Experiencia",
+    "desire": "Reserva Mi Día Santuario",
+    "commit": "Asegura Mi Lugar",
+    "gift": "Regala Este Momento",
+    "urgent": "Reservar Ahora — Plazas Limitadas",
+    "beginJourney": "Comienza Tu Viaje",
+    "learnMore": "Saber Más",
+    "enquire": "Realizar una Consulta",
+    "privateGroups": "Consultar Grupos Privados",
+    "giftVouchers": "Consultar Vouchers de Regalo",
+    "backHome": "Volver a la Experiencia"
+  },
+
+  "hero": {
+    "home": {
+      "h1": "Esto No Es un Tour. Es una Transformación.",
+      "h2": "Wine & Flow es un día santuario en el corazón de Málaga — diseñado para quienes buscan presencia, belleza y el lujo silencioso de estar completamente aquí.",
+      "cta": "Comienza Tu Viaje"
+    }
+  },
+
+  "booking": {
+    "formTitle": "Realiza Tu Consulta",
+    "submit": "Enviar Mi Consulta",
+    "trustLine": "Leemos cada mensaje personalmente. Tendrás respuesta nuestra en 24 horas.",
+    "fields": {
+      "name": "Nombre Completo",
+      "namePlaceholder": "Tu nombre",
+      "email": "Correo Electrónico",
+      "emailPlaceholder": "tu@correo.com",
+      "phone": "Teléfono (opcional)",
+      "phonePlaceholder": "+1 / +44 / +34...",
+      "date": "Fecha Preferida",
+      "datePlaceholder": "Selecciona una fecha",
+      "experience": "Experiencia",
+      "experienceOptions": [
+        "Paquete Sunset Harmony",
+        "Taller de Vino",
+        "Grupo Privado",
+        "Aún no lo sé"
+      ],
+      "groupSize": "Tamaño del Grupo",
+      "groupSizeOptions": ["Solo yo", "2 personas", "3–5", "6–10"],
+      "dietary": "Notas Dietéticas",
+      "dietaryPlaceholder": "Alergias, intolerancias o preferencias",
+      "message": "Tu Mensaje",
+      "messagePlaceholder": "Cuéntanos cualquier cosa — qué te trae aquí, qué esperas..."
+    },
+    "confirmation": {
+      "heading": "Hemos Recibido Tu Consulta",
+      "body": "Gracias por contactarnos. Alguien del equipo de Wine & Flow se pondrá en contacto contigo en 24 horas para confirmar tu plaza y responder cualquier pregunta."
+    },
+    "prebookingNote": "Wine & Flow es una experiencia pequeña y profundamente intencional. Limitamos cada sesión a diez huéspedes — no como una decisión de marketing, sino porque cualquier número mayor comprometería la calidad de lo que ofrecemos.",
+    "contact": {
+      "heading": "¿Prefieres una Conversación Directa?",
+      "body": "Algunas cosas se dicen mejor de viva voz. Si deseas hablar con nosotros antes de reservar, bienvenida una llamada o mensaje de WhatsApp.",
+      "hours": "Lunes a sábado, 9:00–18:00 CET"
+    }
+  },
+
+  "faq": {
+    "heading": "Preguntas Frecuentes",
+    "questions": [
+      {
+        "q": "¿Cuál es el código de vestimenta?",
+        "a": "No existe un código de vestimenta formal — solo una invitación a vestir para la comodidad y la naturalidad. Recomendamos capas con las que puedas moverte libremente para las sesiones de yoga y algo con lo que te sientas elegante para la experiencia gastronómica."
+      },
+      {
+        "q": "¿Es adecuado para principiantes?",
+        "a": "Absolutamente. Wine & Flow está diseñado desde cero para el curioso, no para el experto. Nuestras sesiones de yoga son completamente accesibles y nuestro sommelier hace que el mundo del vino se sienta acogedor en lugar de intimidante."
+      },
+      {
+        "q": "¿Qué pasa si tengo una alergia o restricción dietética?",
+        "a": "Pedimos a todos los huéspedes que compartan cualquier alergia en el momento de la reserva. Nuestro chef diseña en torno a tus necesidades. Si no estás seguro, contáctanos directamente antes de tu llegada."
+      }
+    ]
+  },
+
+  "footer": {
+    "tagline": "Donde la vid se encuentra con el alma — Málaga, Andalucía",
+    "socialProof": "Valoración 5,0 · Huéspedes de confianza de 24 países",
+    "copyright": "© 2026 Wine & Flow. Todos los derechos reservados.",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos y Condiciones",
+    "cookies": "Preferencias de Cookies",
+    "followUs": "Sigue Nuestros Días",
+    "columns": {
+      "experiences": ["La Experiencia", "Cocina", "La Bodega", "Retiros"],
+      "company": ["Nosotros", "Prensa", "Vouchers de Regalo", "Sostenibilidad"],
+      "contact": ["Contacto", "WhatsApp", "Política de Privacidad", "Términos"]
+    }
+  },
+
+  "errors": {
+    "fieldRequired": "Este campo es obligatorio.",
+    "emailInvalid": "Por favor, introduce una dirección de correo válida.",
+    "dateUnavailable": "Esta fecha ya no está disponible. Por favor, selecciona otra.",
+    "formError": "Algo salió mal. Inténtalo de nuevo o contáctanos directamente.",
+    "notFound": {
+      "heading": "Te Has Perdido en Algún Lugar Hermoso.",
+      "sub": "Pero esta página no existe. Déjanos guiarte de vuelta.",
+      "cta": "Volver a la Experiencia"
+    }
+  },
+
+  "accessibility": {
+    "menuOpen": "Abrir menú",
+    "menuClose": "Cerrar menú",
+    "lightboxClose": "Cerrar imagen",
+    "lightboxNext": "Imagen siguiente",
+    "lightboxPrev": "Imagen anterior",
+    "skipToContent": "Saltar al contenido principal"
+  }
+}
