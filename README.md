@@ -92,37 +92,44 @@ member's portal or a high-end travel magazine feature.
 ## FILE STRUCTURE
 
 ```
-wine-and-flow/
+Aura-Marina-Retreat/
 ├── README.md                         ← You are here
-├── BACKLOG.md                        ← Task tracking (28 content tasks)
+├── BACKLOG.md                        ← Task tracking (all epics)
 ├── docs/                             ← Technical specifications
-│   ├── sitemap.md                    ← A1
-│   ├── booking-engine-spec.md        ← A2
-│   ├── i18n-spec.md                  ← A3
-│   ├── gallery-spec.md               ← A4
-│   ├── image-editing-spec.md         ← C2
-│   └── asset-delivery-spec.md        ← C3
+│   ├── sitemap.md                    ← A1: 7-page structure + routing
+│   ├── booking-engine-spec.md        ← A2: Stripe, flow, UX rules
+│   ├── i18n-spec.md                  ← A3: EN↔ES architecture
+│   ├── gallery-spec.md               ← A4: Gallery types + performance
+│   ├── image-editing-spec.md         ← C2: Color grade + selection
+│   ├── asset-delivery-spec.md        ← C3: File formats + naming
+│   └── qa-checklist.md               ← Launch QA: all checks before go-live
 ├── src/
-│   ├── pages/                        ← Per-page content files (B1–B3)
-│   │   ├── home.content.js
-│   │   ├── experiences.content.js
-│   │   ├── dining.content.js
-│   │   ├── winery.content.js
-│   │   ├── about.content.js
-│   │   └── booking.content.js
+│   ├── pages/                        ← Structured content objects (B1–B3)
+│   │   ├── home.content.js           ← Hero + 3 pillars + CTA banners
+│   │   ├── experiences.content.js    ← Sunset Harmony package + timeline
+│   │   ├── dining.content.js         ← Kitchen story + menu + sourcing
+│   │   ├── winery.content.js         ← Bodega workshop + testimonials
+│   │   ├── about.content.js          ← Origin + team + values
+│   │   └── booking.content.js        ← Form + confirmation + gift voucher
 │   ├── components/
-│   │   └── ui.copy.js                ← B4: CTAs, FAQ, micro-copy
+│   │   └── ui.copy.js                ← B4: CTAs, FAQ, nav, footer, 404
 │   ├── i18n/
-│   │   ├── en.json                   ← All EN strings
-│   │   └── es.json                   ← All ES strings
+│   │   ├── en.json                   ← All EN UI strings
+│   │   └── es.json                   ← All ES UI strings (primary voice)
 │   └── styles/
-│       └── tokens.css                ← Design tokens
-├── pages/                            ← Raw copy drafts (source)
-├── content/                          ← Marketing copy (source)
+│       └── tokens.css                ← Design tokens + base CSS resets
+├── pages/                            ← Raw copy source (for writers + review)
+│   ├── about.md
+│   ├── booking-contact.md
+│   ├── footer-seo.md                 ← Includes SEO meta tags for all pages
+│   └── winery-program.md
+├── content/
+│   └── social-marketing.md           ← Instagram captions, email sequence, Google Ads
 └── assets/
-    ├── brand-system.md               ← Full brand guide
+    ├── brand-system.md               ← Full brand guide (color, type, tokens, logo)
     └── photo-briefs/
-        └── master-shot-list.md       ← C1 photographer brief
+        ├── master-shot-list.md       ← C1: 36 editorial + 20 social shots brief
+        └── winery-about-shots.md     ← C1: Winery + About page directives
 ```
 
 ---
@@ -132,8 +139,10 @@ wine-and-flow/
 | Need | Go To |
 |---|---|
 | Brand colors & fonts | `assets/brand-system.md` |
-| All page copy (raw) | `pages/*.md` |
+| All page copy (raw, for review) | `pages/*.md` |
 | Photo shoot brief | `assets/photo-briefs/master-shot-list.md` |
 | Booking engine spec | `docs/booking-engine-spec.md` |
 | Content as JS objects | `src/pages/*.content.js` |
-| All strings (EN+ES) | `src/i18n/en.json` + `es.json` |
+| All UI strings (EN+ES) | `src/i18n/en.json` + `es.json` |
+| Launch QA checklist | `docs/qa-checklist.md` |
+| SEO meta tags (all pages) | `pages/footer-seo.md` |

@@ -101,16 +101,26 @@
 - [x] C3 · docs/asset-delivery-spec.md — File formats, naming convention, folder structure
 - [x] src/styles/tokens.css — Full design token system (colors, type, spacing, motion)
 
+### 🟡 P3 — Polishing (complete)
+- [x] src/pages/dining.content.js — Kitchen story, menu preview, sourcing, chef quote (EN+ES)
+- [x] src/pages/winery.content.js — Bodega workshop, 3 movements, details, testimonials (EN+ES)
+- [x] src/pages/about.content.js — Origin, philosophy, team, values, closing CTA (EN+ES)
+- [x] src/pages/booking.content.js — Pre-book note, contact, gift voucher, confirmation, testimonials (EN+ES)
+- [x] docs/qa-checklist.md — Full launch QA checklist (content, functional, design, performance, SEO, mobile)
+- [x] README.md — Fixed FILE STRUCTURE: wine-and-flow/ → Aura-Marina-Retreat/, added qa-checklist + missing files
+- [x] Testimonial (max shemirani) — Integrated across winery.content.js + booking.content.js
+
 ### 🟢 Launch
-- [ ] QA pass — all pages, both languages, mobile + desktop
+- [ ] QA pass — all pages, both languages, mobile + desktop (see docs/qa-checklist.md)
+- [ ] Fill placeholders: phone number, email, physical address, pick-up point
 - [ ] Booking flow end-to-end test (Stripe sandbox)
 - [ ] Performance audit — LCP < 2.5s, Core Web Vitals green
-- [ ] Final sign-off by full team
+- [ ] Final sign-off by full team (see sign-off table in qa-checklist.md)
 
 ---
 
 ## NOTES
-- EPICs 1–8 (content): ALL 28 TASKS COMPLETE ✓
-- EPIC 9 (platform build): P1, P2, P3 deliverables complete ✓ — Launch QA pending
-- Total files: 22 across pages/, assets/, content/, docs/, src/
-- Next: Developer implements components using tokens.css + content.js files
+- EPICs 1–9: ALL TASKS COMPLETE ✓ — except Launch QA (requires live environment)
+- Total files: 27 across pages/, assets/, content/, docs/, src/
+- Duplications reviewed: pages/ (raw markdown) and src/pages/ (JS objects) are intentionally different — writers review pages/, developers import src/pages/
+- Remaining action: fill phone/email placeholders before going live
