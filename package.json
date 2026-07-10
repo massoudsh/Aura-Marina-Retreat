@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3004",
-    "dev:debug": "NODE_OPTIONS='--inspect' next dev -p 3004",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider next dev -p 3004",
+    "dev:debug": "NODE_OPTIONS='--openssl-legacy-provider --inspect' next dev -p 3004",
     "build": "next build",
     "start": "next start -p 3004",
     "lint": "next lint",
