@@ -4,6 +4,10 @@ const withNextIntl = createNextIntlPlugin('./lib/i18n.ts');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  webpack: (config) => {
+    config.output.hashFunction = 'xxhash64';
+    return config;
+  },
   images: {
     formats: ['image/webp'],
     remotePatterns: [
