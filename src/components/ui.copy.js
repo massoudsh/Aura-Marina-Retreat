@@ -158,6 +158,18 @@ export const ui = {
     es: { active: "ES", inactive: "EN", ariaLabel: "Cambiar a inglés" },
   },
 
+  // ─── ACCESSIBILITY LABELS ─────────────────────────────────────────────────
+  accessibility: {
+    en: {
+      menuOpen:  "Open navigation menu",
+      menuClose: "Close navigation menu",
+    },
+    es: {
+      menuOpen:  "Abrir menú de navegación",
+      menuClose: "Cerrar menú de navegación",
+    },
+  },
+
   // ─── 404 PAGE ────────────────────────────────────────────────────────────────
   notFound: {
     en: {
