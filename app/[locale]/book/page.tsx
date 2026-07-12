@@ -130,7 +130,7 @@ export default function BookPage({ params: { locale }, searchParams }: BookPageP
                 <Field label={formCopy.fields.experience.label} error={errors.experience?.message}>
                   <select {...register('experience')} className="input">
                     <option value="">—</option>
-                    {formCopy.fields.experienceOptions.map((opt: string) => (
+                    {formCopy.fields.experience.options.map((opt: string) => (
                       <option key={opt} value={opt}>{opt}</option>
                     ))}
                   </select>
@@ -141,7 +141,7 @@ export default function BookPage({ params: { locale }, searchParams }: BookPageP
               <Field label={formCopy.fields.groupSize.label} error={errors.groupSize?.message}>
                 <select {...register('groupSize')} className="input">
                   <option value="">—</option>
-                  {formCopy.fields.groupSizeOptions.map((opt: string) => (
+                  {formCopy.fields.groupSize.options.map((opt: string) => (
                     <option key={opt} value={opt}>{opt}</option>
                   ))}
                 </select>

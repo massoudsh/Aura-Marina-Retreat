@@ -5,11 +5,11 @@ const createJestConfig = nextJest({ dir: './' });
 
 const customJestConfig: Config = {
   testEnvironment: 'jest-environment-jsdom',
-  setupFilesAfterFramework: ['<rootDir>/jest.setup.ts'],
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/$1',
   },
-  testPathPattern: ['<rootDir>/__tests__/'],
+  testMatch: ['<rootDir>/__tests__/**/*.(test|spec).(ts|tsx)'],
   collectCoverageFrom: [
     'lib/**/*.ts',
     'components/**/*.tsx',
