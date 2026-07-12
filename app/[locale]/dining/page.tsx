@@ -3,6 +3,7 @@ import Hero from '@/components/sections/Hero';
 import BookingBanner from '@/components/sections/BookingBanner';
 import { diningContent } from '@/src/pages/dining.content';
 import { homeContent } from '@/src/pages/home.content';
+import { siteImages } from '@/src/lib/images';
 import type { Locale } from '@/types';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: Locale } }): Promise<Metadata> {
@@ -24,7 +25,7 @@ export default function DiningPage({ params: { locale } }: { params: { locale: L
 
   return (
     <>
-      <Hero label={hero.label} h1={hero.h1} h2={hero.sub} imageSrc="/assets/images/dining_table_01.jpg" imageAlt="Chef's table at Wine & Flow dining" />
+      <Hero label={hero.label} h1={hero.h1} h2={hero.sub} imageSrc={siteImages.diningTable} imageAlt="Chef's table at Wine & Flow dining" />
 
       {/* Origin story */}
       <section className="section-padding bg-linen">
@@ -87,7 +88,7 @@ export default function DiningPage({ params: { locale } }: { params: { locale: L
         </div>
       </section>
 
-      <BookingBanner headline={banner.headline} sub={banner.sub} cta={{ text: cta.text, href: cta.href }} note={banner.note} imageSrc="/assets/images/dining_chef_01.jpg" />
+      <BookingBanner headline={banner.headline} sub={banner.sub} cta={{ text: cta.text, href: cta.href }} note={banner.note} imageSrc={siteImages.diningChef} />
     </>
   );
 }

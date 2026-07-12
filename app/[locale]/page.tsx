@@ -1,11 +1,14 @@
-import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import Hero from '@/components/sections/Hero';
 import ValueProps from '@/components/sections/ValueProps';
 import PackageTeaser from '@/components/sections/PackageTeaser';
 import BookingBanner from '@/components/sections/BookingBanner';
 import Testimonials from '@/components/sections/Testimonials';
+import Gallery from '@/components/sections/Gallery';
+import FAQSection from '@/components/sections/FAQSection';
+import { FadeIn } from '@/components/ui/FadeIn';
 import { homeContent } from '@/src/pages/home.content';
+import { siteImages } from '@/src/lib/images';
 import type { Locale } from '@/types';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: Locale } }): Promise<Metadata> {
@@ -21,10 +24,10 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 }
 
 export default async function HomePage({ params: { locale } }: { params: { locale: Locale } }) {
-  const hero       = homeContent.hero[locale];
-  const pillars    = homeContent.valueProp[locale];
-  const pkg        = homeContent.packageTeaser[locale];
-  const banner     = homeContent.bookingBanner[locale];
+  const hero    = homeContent.hero[locale];
+  const pillars = homeContent.valueProp[locale];
+  const pkg     = homeContent.packageTeaser[locale];
+  const banner  = homeContent.bookingBanner[locale];
 
   return (
     <>
@@ -33,31 +36,41 @@ export default async function HomePage({ params: { locale } }: { params: { local
         h1={hero.h1}
         h2={hero.h2}
         cta={{ text: hero.cta, href: hero.ctaHref }}
-        imageSrc="/assets/images/home_hero_01.jpg"
+        imageSrc={siteImages.homeHero}
         imageAlt="Golden hour on the Málaga terrace — Wine & Flow experience"
         fullscreen
       />
 
-      <ValueProps pillars={pillars} locale={locale} />
+      <FadeIn>
+        <ValueProps pillars={pillars} locale={locale} />
+      </FadeIn>
 
-      <PackageTeaser
-        label={pkg.label}
-        title={pkg.title}
-        description={pkg.description}
-        priceFrom={pkg.priceFrom}
-        cta={{ text: pkg.cta, href: pkg.ctaHref }}
-        imageSrc="/assets/images/experiences_yoga_01.jpg"
-        locale={locale}
-      />
+      <FadeIn delay={0.1}>
+        <PackageTeaser
+          label={pkg.label}
+          title={pkg.title}
+          description={pkg.description}
+          priceFrom={pkg.priceFrom}
+          cta={{ text: pkg.cta, href: pkg.ctaHref }}
+          imageSrc={siteImages.experiencesYoga}
+          locale={locale}
+        />
+      </FadeIn>
 
-      <Testimonials locale={locale} />
+      <Gallery locale={locale} />
+
+      <FadeIn>
+        <Testimonials locale={locale} />
+      </FadeIn>
+
+      <FAQSection locale={locale} />
 
       <BookingBanner
         headline={banner.headline}
         sub={banner.sub}
         cta={{ text: banner.cta, href: banner.ctaHref }}
         note={banner.note}
-        imageSrc="/assets/images/home_coast_01.jpg"
+        imageSrc={siteImages.homeCoast}
       />
     </>
   );

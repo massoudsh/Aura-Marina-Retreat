@@ -3,6 +3,7 @@ import Hero from '@/components/sections/Hero';
 import BookingBanner from '@/components/sections/BookingBanner';
 import { aboutContent } from '@/src/pages/about.content';
 import { homeContent } from '@/src/pages/home.content';
+import { siteImages } from '@/src/lib/images';
 import type { Locale } from '@/types';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: Locale } }): Promise<Metadata> {
@@ -24,7 +25,7 @@ export default function AboutPage({ params: { locale } }: { params: { locale: Lo
 
   return (
     <>
-      <Hero label={hero.label} h1={hero.h1} h2={hero.sub} imageSrc="/assets/images/about_team_01.jpg" imageAlt="The Wine & Flow team on the Málaga terrace" />
+      <Hero label={hero.label} h1={hero.h1} h2={hero.sub} imageSrc={siteImages.aboutTeam} imageAlt="The Wine & Flow team on the Málaga terrace" />
 
       {/* Origin */}
       <section className="section-padding bg-linen">

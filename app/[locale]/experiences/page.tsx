@@ -4,6 +4,7 @@ import Hero from '@/components/sections/Hero';
 import BookingBanner from '@/components/sections/BookingBanner';
 import { experiencesContent } from '@/src/pages/experiences.content';
 import { homeContent } from '@/src/pages/home.content';
+import { siteImages } from '@/src/lib/images';
 import type { Locale } from '@/types';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: Locale } }): Promise<Metadata> {
@@ -36,7 +37,7 @@ export default function ExperiencesPage({ params: { locale } }: { params: { loca
         label={hero.label}
         h1={hero.h1}
         h2={hero.sub}
-        imageSrc="/assets/images/experiences_yoga_01.jpg"
+        imageSrc={siteImages.experiencesYoga}
         imageAlt="Morning yoga session on the Málaga terrace"
       />
 
@@ -105,7 +106,7 @@ export default function ExperiencesPage({ params: { locale } }: { params: { loca
         sub={banner.sub}
         cta={{ text: banner.cta, href: banner.ctaHref }}
         note={banner.note}
-        imageSrc="/assets/images/experiences_savasana_01.jpg"
+        imageSrc={siteImages.experiencesSavasana}
       />
     </>
   );

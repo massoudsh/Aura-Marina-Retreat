@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Hero from '@/components/sections/Hero';
 import { wineryContent } from '@/src/pages/winery.content';
+import { siteImages } from '@/src/lib/images';
 import type { Locale } from '@/types';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: Locale } }): Promise<Metadata> {
@@ -20,7 +21,7 @@ export default function WineryPage({ params: { locale } }: { params: { locale: L
 
   return (
     <>
-      <Hero label={hero.label} h1={hero.h1} h2={hero.sub} cta={{ text: hero.cta, href: hero.ctaHref }} imageSrc="/assets/images/winery_cellar_01.jpg" imageAlt="Wine cellar at our partner Bodega in Málaga" />
+      <Hero label={hero.label} h1={hero.h1} h2={hero.sub} cta={{ text: hero.cta, href: hero.ctaHref }} imageSrc={siteImages.wineryCellar} imageAlt="Wine cellar at our partner Bodega in Málaga" />
 
       {/* Intro */}
       <section className="section-padding bg-linen">
