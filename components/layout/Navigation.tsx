@@ -9,12 +9,12 @@ import type { Locale } from '@/types';
 
 const NAV_LINKS = (locale: Locale) => {
   const n = ui.nav[locale];
-  const prefix = `/${locale}`;
+  const isEs = locale === 'es';
   return [
-    { label: n.experience, href: `${prefix}/experiences` },
-    { label: n.dining,     href: `${prefix}/dining` },
-    { label: n.winery,     href: `${prefix}/winery` },
-    { label: n.about,      href: `${prefix}/about` },
+    { label: n.experience, href: isEs ? '/es/experiencias' : '/en/experiences' },
+    { label: n.dining,     href: isEs ? '/es/cocina'       : '/en/dining' },
+    { label: n.winery,     href: isEs ? '/es/bodega'       : '/en/winery' },
+    { label: n.about,      href: isEs ? '/es/nosotros'     : '/en/about' },
   ];
 };
 
