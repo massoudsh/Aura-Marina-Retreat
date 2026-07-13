@@ -79,7 +79,7 @@ export const ui = {
   // ─── FOOTER ──────────────────────────────────────────────────────────────────
   footer: {
     en: {
-      tagline:     "Where the vine meets the soul — Málaga, Andalusia",
+      tagline:     "Where movement meets the vine — Málaga, Andalusia",
       brand:       "Flowhaven is a curated full-day sanctuary experience in Málaga, combining Sommelier-led wine education, restorative yoga, and locally sourced coastal cuisine. Intimate by design. Transformative by nature.",
       socialProof: "Rated 5.0 · Trusted by guests from 24 countries",
       copyright:   "© 2026 Flowhaven. All rights reserved.",
@@ -95,7 +95,7 @@ export const ui = {
       },
     },
     es: {
-      tagline:     "Donde la vid se encuentra con el alma — Málaga, Andalucía",
+      tagline:     "Donde el movimiento se encuentra con la vid — Málaga, Andalucía",
       brand:       "Flowhaven es una experiencia santuario de día completo en Málaga, que combina educación vinícola dirigida por sommelier, yoga restaurador y cocina costera de producto local. Íntimo por diseño. Transformador por naturaleza.",
       socialProof: "Valoración 5,0 · Huéspedes de confianza de 24 países",
       copyright:   "© 2026 Flowhaven. Todos los derechos reservados.",

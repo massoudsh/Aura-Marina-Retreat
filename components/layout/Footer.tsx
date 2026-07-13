@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { ui } from '@/src/components/ui.copy';
 import type { Locale } from '@/types';
@@ -17,7 +18,10 @@ export default function Footer({ locale }: { locale: Locale }) {
         <div className="grid lg:grid-cols-4 gap-12 pb-16 border-b border-linen/10">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <p className="font-display text-2xl font-light text-linen mb-4">Flowhaven</p>
+            <div className="flex items-center gap-3 mb-4">
+              <Image src="/flowhaven-mark.svg" alt="" width={36} height={36} className="rounded-full" />
+              <p className="font-display text-2xl font-light text-linen">Flowhaven</p>
+            </div>
             <p className="font-body text-caption text-sage leading-relaxed mb-6 max-w-xs">{f.brand}</p>
             <p className="font-body text-caption text-gold">{f.socialProof}</p>
           </div>

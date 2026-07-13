@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
@@ -44,8 +45,9 @@ export default function Navigation({ locale }: { locale: Locale }) {
       >
         <nav className="container-site h-20 flex items-center justify-between">
           {/* Logo */}
-          <Link href={`/${locale}`} className="font-display text-xl font-light tracking-wider text-soul hover:text-gold transition-colors duration-150">
-            Flowhaven
+          <Link href={`/${locale}`} className="flex items-center gap-3 text-soul hover:text-gold transition-colors duration-150">
+            <Image src="/flowhaven-mark.svg" alt="" width={32} height={32} className="rounded-full" priority />
+            <span className="font-display text-xl font-light tracking-wider">Flowhaven</span>
           </Link>
 
           {/* Desktop nav */}
@@ -95,7 +97,10 @@ export default function Navigation({ locale }: { locale: Locale }) {
       {menuOpen && (
         <div className="fixed inset-0 z-modal bg-soul flex flex-col animate-fade-in">
           <div className="container-site h-20 flex items-center justify-between">
-            <span className="font-display text-xl font-light text-linen">Flowhaven</span>
+            <div className="flex items-center gap-3 text-linen">
+              <Image src="/flowhaven-mark.svg" alt="" width={32} height={32} className="rounded-full" priority />
+              <span className="font-display text-xl font-light">Flowhaven</span>
+            </div>
             <button
               onClick={() => setMenuOpen(false)}
               className="text-linen font-body text-2xl leading-none"
