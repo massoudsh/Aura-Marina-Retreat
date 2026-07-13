@@ -44,7 +44,7 @@ export default function Navigation({ locale }: { locale: Locale }) {
         <nav className="container-site h-20 flex items-center justify-between">
           {/* Logo */}
           <Link href={`/${locale}`} className="font-display text-xl font-light tracking-wider text-soul hover:text-gold transition-colors duration-150">
-            Wine & Flow
+            Flowhaven
           </Link>
 
           {/* Desktop nav */}
@@ -94,7 +94,7 @@ export default function Navigation({ locale }: { locale: Locale }) {
       {menuOpen && (
         <div className="fixed inset-0 z-modal bg-soul flex flex-col animate-fade-in">
           <div className="container-site h-20 flex items-center justify-between">
-            <span className="font-display text-xl font-light text-linen">Wine & Flow</span>
+            <span className="font-display text-xl font-light text-linen">Flowhaven</span>
             <button
               onClick={() => setMenuOpen(false)}
               className="text-linen font-body text-2xl leading-none"

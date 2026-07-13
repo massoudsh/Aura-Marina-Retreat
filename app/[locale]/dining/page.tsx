@@ -25,7 +25,7 @@ export default function DiningPage({ params: { locale } }: { params: { locale: L
 
   return (
     <>
-      <Hero label={hero.label} h1={hero.h1} h2={hero.sub} imageSrc={siteImages.diningTable} imageAlt="Chef's table at Wine & Flow dining" />
+      <Hero label={hero.label} h1={hero.h1} h2={hero.sub} imageSrc={siteImages.diningTable} imageAlt="Chef's table at Flowhaven dining" />
 
       {/* Origin story */}
       <section className="section-padding bg-linen">

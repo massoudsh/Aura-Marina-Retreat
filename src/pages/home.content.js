@@ -11,13 +11,13 @@ export const homeContent = {
   hero: {
     en: {
       h1: "This Is Not a Tour. This Is a Transformation.",
-      h2: "Wine & Flow is a curated sanctuary day in the heart of Málaga — crafted for those who seek presence, beauty, and the quiet luxury of being entirely here.",
+      h2: "Flowhaven is a curated sanctuary day in the heart of Málaga — crafted for those who seek presence, beauty, and the quiet luxury of being entirely here.",
       cta: "Begin Your Journey",
       ctaHref: "/en/book",
     },
     es: {
       h1: "Esto No Es un Tour. Es una Transformación.",
-      h2: "Wine & Flow es un día santuario en el corazón de Málaga — diseñado para quienes buscan presencia, belleza y el lujo silencioso de estar completamente aquí.",
+      h2: "Flowhaven es un día santuario en el corazón de Málaga — diseñado para quienes buscan presencia, belleza y el lujo silencioso de estar completamente aquí.",
       cta: "Comienza Tu Viaje",
       ctaHref: "/es/reservar",
     },

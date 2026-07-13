@@ -17,7 +17,7 @@ export default function Footer({ locale }: { locale: Locale }) {
         <div className="grid lg:grid-cols-4 gap-12 pb-16 border-b border-linen/10">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <p className="font-display text-2xl font-light text-linen mb-4">Wine & Flow</p>
+            <p className="font-display text-2xl font-light text-linen mb-4">Flowhaven</p>
             <p className="font-body text-caption text-sage leading-relaxed mb-6 max-w-xs">{f.brand}</p>
             <p className="font-body text-caption text-gold">{f.socialProof}</p>
           </div>

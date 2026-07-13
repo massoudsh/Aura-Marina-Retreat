@@ -51,7 +51,7 @@ export const ui = {
       },
       {
         question: "Is this suitable for beginners — both in yoga and in wine?",
-        answer: "Absolutely. Wine & Flow is designed from the ground up for the curious, not the expert. Our yoga sessions are entirely accessible — no prior experience is required, only willingness. Our sommelier is equally gifted at making the world of wine feel welcoming rather than intimidating. Many of our guests arrive knowing very little and leave feeling deeply connected to both practices. The only qualification for being here is the desire to be present.",
+        answer: "Absolutely. Flowhaven is designed from the ground up for the curious, not the expert. Our yoga sessions are entirely accessible — no prior experience is required, only willingness. Our sommelier is equally gifted at making the world of wine feel welcoming rather than intimidating. Many of our guests arrive knowing very little and leave feeling deeply connected to both practices. The only qualification for being here is the desire to be present.",
       },
       {
         question: "What if I have a dietary allergy or restriction?",
@@ -65,7 +65,7 @@ export const ui = {
       },
       {
         question: "¿Es adecuado para principiantes — tanto en yoga como en vino?",
-        answer: "Absolutamente. Wine & Flow está diseñado desde cero para el curioso, no para el experto. Nuestras sesiones de yoga son completamente accesibles — no se requiere experiencia previa, solo disposición. Nuestro sommelier tiene el mismo don para hacer que el mundo del vino se sienta acogedor en lugar de intimidante. Muchos de nuestros huéspedes llegan sabiendo muy poco y se van sintiéndose profundamente conectados con ambas prácticas. El único requisito para estar aquí es el deseo de estar presente.",
+        answer: "Absolutamente. Flowhaven está diseñado desde cero para el curioso, no para el experto. Nuestras sesiones de yoga son completamente accesibles — no se requiere experiencia previa, solo disposición. Nuestro sommelier tiene el mismo don para hacer que el mundo del vino se sienta acogedor en lugar de intimidante. Muchos de nuestros huéspedes llegan sabiendo muy poco y se van sintiéndose profundamente conectados con ambas prácticas. El único requisito para estar aquí es el deseo de estar presente.",
       },
       {
         question: "¿Qué pasa si tengo una alergia o restricción dietética?",
@@ -78,9 +78,9 @@ export const ui = {
   footer: {
     en: {
       tagline:     "Where the vine meets the soul — Málaga, Andalusia",
-      brand:       "Wine & Flow is a curated full-day sanctuary experience in Málaga, combining Sommelier-led wine education, restorative yoga, and locally sourced coastal cuisine. Intimate by design. Transformative by nature.",
+      brand:       "Flowhaven is a curated full-day sanctuary experience in Málaga, combining Sommelier-led wine education, restorative yoga, and locally sourced coastal cuisine. Intimate by design. Transformative by nature.",
       socialProof: "Rated 5.0 · Trusted by guests from 24 countries",
-      copyright:   "© 2026 Wine & Flow. All rights reserved.",
+      copyright:   "© 2026 Flowhaven. All rights reserved.",
       links: {
         privacy:   "Privacy Policy",
         terms:     "Terms & Conditions",
@@ -94,9 +94,9 @@ export const ui = {
     },
     es: {
       tagline:     "Donde la vid se encuentra con el alma — Málaga, Andalucía",
-      brand:       "Wine & Flow es una experiencia santuario de día completo en Málaga, que combina educación vinícola dirigida por sommelier, yoga restaurador y cocina costera de producto local. Íntimo por diseño. Transformador por naturaleza.",
+      brand:       "Flowhaven es una experiencia santuario de día completo en Málaga, que combina educación vinícola dirigida por sommelier, yoga restaurador y cocina costera de producto local. Íntimo por diseño. Transformador por naturaleza.",
       socialProof: "Valoración 5,0 · Huéspedes de confianza de 24 países",
-      copyright:   "© 2026 Wine & Flow. Todos los derechos reservados.",
+      copyright:   "© 2026 Flowhaven. Todos los derechos reservados.",
       links: {
         privacy:   "Política de Privacidad",
         terms:     "Términos y Condiciones",
@@ -128,7 +128,7 @@ export const ui = {
       },
       confirmation: {
         heading: "We've Received Your Enquiry",
-        body:    "Thank you for reaching out. Someone from the Wine & Flow team will be in touch within 24 hours to confirm your space and answer any questions.",
+        body:    "Thank you for reaching out. Someone from the Flowhaven team will be in touch within 24 hours to confirm your space and answer any questions.",
       },
     },
     es: {
@@ -147,7 +147,7 @@ export const ui = {
       },
       confirmation: {
         heading: "Hemos Recibido Tu Consulta",
-        body:    "Gracias por contactarnos. Alguien del equipo de Wine & Flow se pondrá en contacto contigo en 24 horas para confirmar tu plaza y responder cualquier pregunta.",
+        body:    "Gracias por contactarnos. Alguien del equipo de Flowhaven se pondrá en contacto contigo en 24 horas para confirmar tu plaza y responder cualquier pregunta.",
       },
     },
   },

@@ -21,8 +21,8 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://wineandflow.com'),
   title: {
-    default: 'Wine & Flow Málaga | Luxury Wine, Yoga & Coastal Cuisine',
-    template: '%s | Wine & Flow Málaga',
+    default: 'Flowhaven Málaga | Luxury Wine, Yoga & Coastal Cuisine',
+    template: '%s | Flowhaven Málaga',
   },
   description:
     'A full-day immersive sanctuary in Málaga — Sommelier-led wine pairings, restorative yoga, and locally sourced seafood cuisine. Intimate groups. Premium experience.',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_GB',
     alternateLocale: 'es_ES',
-    siteName: 'Wine & Flow',
+    siteName: 'Flowhaven',
   },
 };
 

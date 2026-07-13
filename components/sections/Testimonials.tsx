@@ -7,7 +7,7 @@ const TESTIMONIALS = {
       author: "M.T.", location: "London",
     },
     {
-      quote: "Wine & Flow is the most intentional luxury I have experienced in years. Every detail — from the handwritten welcome card to the final tisane — felt considered. Not performative. Real.",
+      quote: "Flowhaven is the most intentional luxury I have experienced in years. Every detail — from the handwritten welcome card to the final tisane — felt considered. Not performative. Real.",
       author: "S.L.", location: "New York",
     },
     {
@@ -21,7 +21,7 @@ const TESTIMONIALS = {
       author: "M.T.", location: "Londres",
     },
     {
-      quote: "Wine & Flow es el lujo más intencional que he experimentado en años. Cada detalle — desde la tarjeta de bienvenida escrita a mano hasta la tisana final — parecía pensado. No performativo. Real.",
+      quote: "Flowhaven es el lujo más intencional que he experimentado en años. Cada detalle — desde la tarjeta de bienvenida escrita a mano hasta la tisana final — parecía pensado. No performativo. Real.",
       author: "S.L.", location: "Nueva York",
     },
     {

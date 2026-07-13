@@ -124,11 +124,11 @@ export const diningContent = {
   chefQuote: {
     en: {
       quote: "The sea is the recipe. I am simply the translator.",
-      attribution: "— Head Chef, Wine & Flow",
+      attribution: "— Head Chef, Flowhaven",
     },
     es: {
       quote: "El mar es la receta. Yo soy simplemente el traductor.",
-      attribution: "— Chef Principal, Wine & Flow",
+      attribution: "— Chef Principal, Flowhaven",
     },
   },
 
