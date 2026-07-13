@@ -28,6 +28,7 @@ export const ui = {
   nav: {
     en: {
       experience: "The Experience",
+      journey:    "The Journey",
       dining:     "Dining",
       winery:     "The Winery",
       about:      "Our Story",
@@ -35,6 +36,7 @@ export const ui = {
     },
     es: {
       experience: "La Experiencia",
+      journey:    "El Viaje",
       dining:     "Cocina",
       winery:     "La Bodega",
       about:      "Nuestra Historia",

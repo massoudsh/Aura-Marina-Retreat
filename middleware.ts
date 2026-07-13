@@ -6,6 +6,7 @@ export default createMiddleware({
   localeDetection: true,
   localePrefix: 'always',
   pathnames: {
+    '/journey':                  { en: '/journey',        es: '/viaje' },
     '/experiences':              { en: '/experiences',    es: '/experiencias' },
     '/experiences/[slug]':       { en: '/experiences/[slug]', es: '/experiencias/[slug]' },
     '/dining':                   { en: '/dining',         es: '/cocina' },

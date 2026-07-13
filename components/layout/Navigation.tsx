@@ -12,6 +12,7 @@ const NAV_LINKS = (locale: Locale) => {
   const isEs = locale === 'es';
   return [
     { label: n.experience, href: isEs ? '/es/experiencias' : '/en/experiences' },
+    { label: n.journey,    href: isEs ? '/es/viaje'        : '/en/journey' },
     { label: n.dining,     href: isEs ? '/es/cocina'       : '/en/dining' },
     { label: n.winery,     href: isEs ? '/es/bodega'       : '/en/winery' },
     { label: n.about,      href: isEs ? '/es/nosotros'     : '/en/about' },
