@@ -8,8 +8,8 @@ import type { Locale } from '@/types';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: Locale } }): Promise<Metadata> {
   const titles: Record<Locale, string> = {
-    en: 'Our Story | The People Behind Flowhaven Málaga',
-    es: 'Nuestra Historia | Las Personas Detrás de Flowhaven Málaga',
+    en: 'Our Story | The People Behind Heaven Flow Málaga',
+    es: 'Nuestra Historia | Las Personas Detrás de Heaven Flow Málaga',
   };
   return { title: titles[locale] };
 }
@@ -25,7 +25,7 @@ export default function AboutPage({ params: { locale } }: { params: { locale: Lo
 
   return (
     <>
-      <Hero label={hero.label} h1={hero.h1} h2={hero.sub} imageSrc={siteImages.aboutTeam} imageAlt="The Flowhaven team on the Málaga terrace" />
+      <Hero label={hero.label} h1={hero.h1} h2={hero.sub} imageSrc={siteImages.aboutTeam} imageAlt="The Heaven Flow team on the Málaga terrace" />
 
       {/* Origin */}
       <section className="section-padding bg-linen">

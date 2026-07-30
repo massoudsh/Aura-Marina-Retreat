@@ -9,8 +9,8 @@ import type { Locale } from '@/types';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: Locale } }): Promise<Metadata> {
   const titles: Record<Locale, string> = {
-    en: 'The Sunset Harmony Package | Full-Day Luxury Experience in Málaga',
-    es: 'El Paquete Sunset Harmony | Experiencia de Lujo de Día Completo en Málaga',
+    en: 'The Sunset Harmony Package | Full-Day Peaceful Experience in Málaga',
+    es: 'El Paquete Sunset Harmony | Experiencia de Paz de Día Completo en Málaga',
   };
   const descs: Record<Locale, string> = {
     en: 'Yoga at dawn, Sommelier wine tasting, and a chef\'s table lunch overlooking the Málaga bay. From €395.',

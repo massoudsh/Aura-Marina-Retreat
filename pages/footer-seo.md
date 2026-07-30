@@ -66,23 +66,23 @@ Wine & Flow es una experiencia santuario de día completo en Málaga, que combin
 ### Homepage
 
 **EN**
-- `<title>` Wine & Flow Málaga | Luxury Wine, Yoga & Coastal Cuisine Experience
-- `<meta description>` A full-day immersive sanctuary in Málaga — Sommelier-led wine pairings, restorative yoga, and locally sourced seafood cuisine. Intimate groups. Premium experience. Book your place.
+- `<title>` Wine & Flow Málaga | Wine, Yoga & Coastal Cuisine Experience
+- `<meta description>` A full-day immersive sanctuary in Málaga — Sommelier-led wine pairings, restorative yoga, and locally sourced seafood cuisine. Intimate groups. Personal experience. Book your place.
 
 **ES**
-- `<title>` Wine & Flow Málaga | Experiencia de Lujo de Vino, Yoga y Cocina Costera
-- `<meta description>` Una jornada santuario en Málaga — maridajes de vino con sommelier, yoga restaurador y cocina de producto local. Grupos íntimos. Experiencia premium. Reserva tu lugar.
+- `<title>` Wine & Flow Málaga | Experiencia de Vino, Yoga y Cocina Costera
+- `<meta description>` Una jornada santuario en Málaga — maridajes de vino con sommelier, yoga restaurador y cocina de producto local. Grupos íntimos. Experiencia personal. Reserva tu lugar.
 
 ---
 
 ### Experiences Page
 
 **EN**
-- `<title>` The Sunset Harmony Package | Full-Day Luxury Experience in Málaga
+- `<title>` The Sunset Harmony Package | Full-Day Immersive Experience in Málaga
 - `<meta description>` Yoga at dawn, Sommelier wine tasting, and a chef's table lunch overlooking the Málaga bay. The Sunset Harmony Package — a curated day unlike any other. From €395.
 
 **ES**
-- `<title>` El Paquete Sunset Harmony | Experiencia de Lujo de Día Completo en Málaga
+- `<title>` El Paquete Sunset Harmony | Experiencia Inmersiva de Día Completo en Málaga
 - `<meta description>` Yoga al amanecer, cata de vino con sommelier y almuerzo de chef con vistas a la bahía de Málaga. El Paquete Sunset Harmony — un día curado como ningún otro. Desde €395.
 
 ---
@@ -115,11 +115,11 @@ Wine & Flow es una experiencia santuario de día completo en Málaga, que combin
 
 **EN**
 - `<title>` Our Story | The People Behind Wine & Flow Málaga
-- `<meta description>` Wine & Flow was born from a shared belief that the greatest luxury is depth. Meet the sommelier, yoga teacher, and chef who built Málaga's most intimate retreat experience.
+- `<meta description>` Wine & Flow was born from a shared belief that the greatest gift is depth. Meet the sommelier, yoga teacher, and chef who built Málaga's most intimate retreat experience.
 
 **ES**
 - `<title>` Nuestra Historia | Las Personas Detrás de Wine & Flow Málaga
-- `<meta description>` Wine & Flow nació de la creencia compartida de que el mayor lujo es la profundidad. Conoce al sommelier, la profesora de yoga y el chef que crearon la experiencia de retiro más íntima de Málaga.
+- `<meta description>` Wine & Flow nació de la creencia compartida de que el mayor regalo es la profundidad. Conoce al sommelier, la profesora de yoga y el chef que crearon la experiencia de retiro más íntima de Málaga.
 
 ---
 

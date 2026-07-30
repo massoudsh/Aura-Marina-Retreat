@@ -16,7 +16,7 @@ describe('Navigation — EN locale', () => {
   beforeEach(() => render(<Navigation locale="en" />));
 
   it('renders brand logo', () => {
-    expect(screen.getAllByText('Wine & Flow')[0]).toBeInTheDocument();
+    expect(screen.getAllByText('Heaven Flow')[0]).toBeInTheDocument();
   });
 
   it('renders Experience nav link', () => {

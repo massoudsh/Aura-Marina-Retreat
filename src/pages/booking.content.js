@@ -28,7 +28,7 @@ export const bookingContent = {
     en: {
       label: "Before You Book — A Note from Us",
       paragraphs: [
-        "Flowhaven is a small, deeply intentional experience. We cap every session at ten guests — not as a marketing decision, but because anything larger would compromise the quality of what we offer.",
+        "Heaven Flow is a small, deeply intentional experience. We cap every session at ten guests — not as a marketing decision, but because anything larger would compromise the quality of what we offer.",
         "This means dates fill quickly, and we do not hold provisional spaces without confirmation. If a date matters to you, we recommend enquiring early.",
         "We also take a moment with every booking to understand who is coming. If you have dietary needs, physical considerations, or simply want to tell us what you are hoping to carry home from this day — please include that in your message. It helps us take better care of you.",
       ],
@@ -36,7 +36,7 @@ export const bookingContent = {
     es: {
       label: "Antes de Reservar — Una Nota de Nuestra Parte",
       paragraphs: [
-        "Flowhaven es una experiencia pequeña y profundamente intencional. Limitamos cada sesión a diez huéspedes — no como una decisión de marketing, sino porque cualquier número mayor comprometería la calidad de lo que ofrecemos.",
+        "Heaven Flow es una experiencia pequeña y profundamente intencional. Limitamos cada sesión a diez huéspedes — no como una decisión de marketing, sino porque cualquier número mayor comprometería la calidad de lo que ofrecemos.",
         "Esto significa que las fechas se llenan rápidamente, y no reservamos plazas provisionales sin confirmación. Si una fecha es importante para ti, recomendamos consultar con antelación.",
         "También aprovechamos cada reserva para entender quién viene. Si tienes necesidades dietéticas, consideraciones físicas, o simplemente quieres contarnos qué esperas llevarte de este día — inclúyelo en tu mensaje. Nos ayuda a cuidarte mejor.",
       ],
@@ -65,14 +65,14 @@ export const bookingContent = {
   giftVoucher: {
     en: {
       label: "Give the Gift of Presence",
-      body: "Flowhaven gift vouchers are available for the full Sunset Harmony Package or the Wine Workshop. Each voucher is printed on premium cotton paper, hand-signed, and shipped in a branded envelope.",
+      body: "Heaven Flow gift vouchers are available for the full Sunset Harmony Package or the Wine Workshop. Each voucher is printed on premium cotton paper, hand-signed, and shipped in a branded envelope.",
       note: "Perfect for birthdays, anniversaries, corporate gifting, or simply because someone deserves a day that matters.",
       cta: "Enquire About Gift Vouchers",
       ctaHref: "/en/book?type=gift",
     },
     es: {
       label: "Regala la Presencia",
-      body: "Los vouchers de regalo de Flowhaven están disponibles para el Paquete Sunset Harmony completo o el Taller de Vino. Cada voucher se imprime en papel de algodón premium, se firma a mano y se envía en un sobre con la marca.",
+      body: "Los vouchers de regalo de Heaven Flow están disponibles para el Paquete Sunset Harmony completo o el Taller de Vino. Cada voucher se imprime en papel de algodón premium, se firma a mano y se envía en un sobre con la marca.",
       note: "Perfecto para cumpleaños, aniversarios, regalos corporativos, o simplemente porque alguien merece un día que importe.",
       cta: "Consultar Vouchers de Regalo",
       ctaHref: "/es/reservar?tipo=regalo",

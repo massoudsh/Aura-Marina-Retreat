@@ -24,7 +24,7 @@ export const experiencesContent = {
   narrative: {
     en: [
       "Some days simply pass. This one stays with you.",
-      "The Sunset Harmony Package is our signature offering — a meticulously orchestrated twelve-hour arc of sensation, stillness, and celebration, designed for the traveler who understands that the greatest luxury is time spent with exquisite intentionality.",
+      "The Sunset Harmony Package is our signature offering — a meticulously orchestrated twelve-hour arc of sensation, stillness, and celebration, designed for the traveler who understands that the greatest peace is time spent with exquisite intentionality.",
       "Your day begins not with activity, but with breath. As the morning light bleeds amber across the whitewashed walls of our private terrace, your certified yoga guide invites you into an unhurried practice of grounding and presence. No mirrors. No performance. Simply you, the mat, and the sound of the sea a few hundred meters below.",
       "By late morning, the experience shifts to the sensory and the scholarly. Your sommelier — a certified master who has spent years in collaboration with our partner Bodega — walks you through three extraordinary vintages of Andalusian wine, each one a chapter in the region's viticultural story. You are not just drinking; you are reading the landscape through your palate.",
       "At the height of the day, a long table awaits. The chef, who sources exclusively from local fishermen and coastal farms, presents a curated menu born from whatever the sea offered that morning. The meal is slow. The conversation is easy. The setting — with views over the bay — is designed to make you feel both completely present and beautifully removed from the ordinary world.",
@@ -33,7 +33,7 @@ export const experiencesContent = {
     ],
     es: [
       "Algunos días simplemente pasan. Este se queda contigo.",
-      "El Paquete Sunset Harmony es nuestra propuesta estrella — un arco de doce horas meticulosamente orquestado de sensación, quietud y celebración, diseñado para el viajero que entiende que el mayor lujo es el tiempo vivido con intencionalidad exquisita.",
+      "El Paquete Sunset Harmony es nuestra propuesta estrella — un arco de doce horas meticulosamente orquestado de sensación, quietud y celebración, diseñado para el viajero que entiende que la mayor paz es el tiempo vivido con intencionalidad exquisita.",
       "Tu día comienza no con actividad, sino con respiración. Mientras la luz matutina tiñe de ámbar las paredes encaladas de nuestra terraza privada, tu guía de yoga certificado te invita a una práctica serena de arraigo y presencia. Sin espejos. Sin rendimiento. Solo tú, la esterilla y el sonido del mar a pocos cientos de metros.",
       "A media mañana, la experiencia se transforma en lo sensorial y lo académico. Tu sommelier — un maestro certificado que ha colaborado durante años con nuestra Bodega socia — te guía a través de tres extraordinarios vinos andaluces, cada uno un capítulo en la historia vitivinícola de la región. No solo bebes; lees el paisaje a través de tu paladar.",
       "En el punto álgido del día, una mesa larga te espera. El chef, que abastece exclusivamente de pescadores locales y granjas costeras, presenta un menú curado nacido de lo que el mar ofreció esa mañana. La comida es lenta. La conversación, fluida. El entorno — con vistas a la bahía — está diseñado para hacerte sentir completamente presente y bellamente alejado del mundo ordinario.",

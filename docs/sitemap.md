@@ -94,7 +94,7 @@
 **Sections:**
 1. `Hero` — Terrace/founding image
 2. `Origin Story` — "Born from a Single Afternoon" (existing draft)
-3. `The Philosophy` — "We believe luxury is not about addition"
+3. `The Philosophy` — "We believe depth is not about addition"
 4. `Team Portraits` — Sommelier / Yoga Teacher / Chef (3 cards)
 5. `Values` — 3 short statements
 6. `CTA` — "Come Meet Us in Málaga"

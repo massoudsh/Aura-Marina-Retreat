@@ -32,7 +32,7 @@
   "hero": {
     "home": {
       "h1": "This Is Not a Tour. This Is a Transformation.",
-      "h2": "Wine & Flow is a curated sanctuary day in the heart of Málaga — crafted for those who seek presence, beauty, and the quiet luxury of being entirely here.",
+      "h2": "Heaven Flow is a curated sanctuary day in the heart of Málaga — crafted for those who seek presence, beauty, and the quiet peace of being entirely here.",
       "cta": "Begin Your Journey"
     }
   },
@@ -66,9 +66,9 @@
     },
     "confirmation": {
       "heading": "We've Received Your Enquiry",
-      "body": "Thank you for reaching out. Someone from the Wine & Flow team will be in touch within 24 hours to confirm your space and answer any questions."
+      "body": "Thank you for reaching out. Someone from the Heaven Flow team will be in touch within 24 hours to confirm your space and answer any questions."
     },
-    "prebookingNote": "Wine & Flow is a small, deeply intentional experience. We cap every session at ten guests — not as a marketing decision, but because anything larger would compromise the quality of what we offer.",
+    "prebookingNote": "Heaven Flow is a small, deeply intentional experience. We cap every session at ten guests — not as a marketing decision, but because anything larger would compromise the quality of what we offer.",
     "contact": {
       "heading": "Prefer a Direct Conversation?",
       "body": "Some things are better said than typed. If you would like to speak with us before booking, we welcome a call or WhatsApp message.",
@@ -85,7 +85,7 @@
       },
       {
         "q": "Is this suitable for beginners?",
-        "a": "Absolutely. Wine & Flow is designed from the ground up for the curious, not the expert. Our yoga sessions are entirely accessible and our sommelier makes the world of wine feel welcoming rather than intimidating."
+        "a": "Absolutely. Heaven Flow is designed from the ground up for the curious, not the expert. Our yoga sessions are entirely accessible and our sommelier makes the world of wine feel welcoming rather than intimidating."
       },
       {
         "q": "What if I have a dietary allergy or restriction?",
@@ -97,7 +97,7 @@
   "footer": {
     "tagline": "Where the vine meets the soul — Málaga, Andalusia",
     "socialProof": "Rated 5.0 · Trusted by guests from 24 countries",
-    "copyright": "© 2026 Wine & Flow. All rights reserved.",
+    "copyright": "© 2026 Heaven Flow. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms & Conditions",
     "cookies": "Cookie Preferences",

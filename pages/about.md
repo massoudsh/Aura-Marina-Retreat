@@ -34,9 +34,9 @@ Something rarer: a day in which every element — the wine, the movement, the fo
 
 #### THE PHILOSOPHY
 
-**We believe that luxury is not about addition.**
+**We believe that depth is not about addition.**
 
-The modern luxury traveller has already stayed in beautiful hotels. They have already eaten at Michelin-starred restaurants. They are not searching for more. They are searching for *depth*.
+The modern traveller has already stayed in beautiful hotels. They have already eaten at Michelin-starred restaurants. They are not searching for more. They are searching for *depth*.
 
 At Wine & Flow, depth is our discipline. We keep groups intimate — never more than ten guests — because intimacy is not a limitation, it is the entire point. We source every ingredient locally not because it is fashionable, but because the fisherman who has worked the Málaga coast for forty years knows things about the sea that no supply chain ever will. We work exclusively with our partner Bodega because their wines carry the fingerprint of this specific soil, this specific altitude, this specific history — and no other will do.
 
@@ -95,9 +95,9 @@ Algo más raro: un día en que cada elemento — el vino, el movimiento, la comi
 
 #### LA FILOSOFÍA
 
-**Creemos que el lujo no se trata de acumulación.**
+**Creemos que la profundidad no se trata de acumulación.**
 
-El viajero de lujo contemporáneo ya se ha alojado en hoteles hermosos. Ya ha comido en restaurantes con estrellas Michelin. No busca más. Busca *profundidad*.
+El viajero contemporáneo ya se ha alojado en hoteles hermosos. Ya ha comido en restaurantes con estrellas Michelin. No busca más. Busca *profundidad*.
 
 En Wine & Flow, la profundidad es nuestra disciplina. Mantenemos los grupos íntimos — nunca más de diez huéspedes — porque la intimidad no es una limitación, es el punto central. Obtenemos cada ingrediente localmente no porque esté de moda, sino porque el pescador que ha trabajado la costa malagueña durante cuarenta años sabe cosas del mar que ninguna cadena de suministro sabrá jamás. Trabajamos exclusivamente con nuestra Bodega socia porque sus vinos llevan la huella de este suelo específico, esta altitud específica, esta historia específica — y ningún otro servirá.
 

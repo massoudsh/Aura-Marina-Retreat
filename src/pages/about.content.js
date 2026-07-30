@@ -25,14 +25,14 @@ export const aboutContent = {
     en: [
       "It began the way the best ideas always do — not in a boardroom, but over a glass of wine on a terrace, watching the sun dissolve into the Mediterranean.",
       "Two people. A shared obsession with the way certain experiences — a wine that perfectly mirrors its landscape, a yoga practice that finally quiets the mind, a meal so simple it borders on spiritual — have the capacity to change how you see the rest of your life.",
-      "Flowhaven was not designed. It was recognized. A realization that Málaga — one of Europe's most underestimated destinations, a city of extraordinary wine heritage, ancient Moorish architecture, and some of the most generous coastline in the world — deserved an experience worthy of what it actually is.",
+      "Heaven Flow was not designed. It was recognized. A realization that Málaga — one of Europe's most underestimated destinations, a city of extraordinary wine heritage, ancient Moorish architecture, and some of the most generous coastline in the world — deserved an experience worthy of what it actually is.",
       "Not a tour. Not a tasting. Not another wellness retreat promising transformation through a rebranded programme.",
       "Something rarer: a day in which every element — the wine, the movement, the food, the silence — is in such precise conversation with one another that the guest does not leave feeling entertained. They leave feeling known.",
     ],
     es: [
       "Comenzó como siempre empiezan las mejores ideas — no en una sala de reuniones, sino ante una copa de vino en una terraza, viendo el sol disolverse en el Mediterráneo.",
       "Dos personas. Una obsesión compartida por la manera en que ciertas experiencias — un vino que refleja a la perfección su paisaje, una práctica de yoga que finalmente aquieta la mente, una comida tan sencilla que roza lo espiritual — tienen la capacidad de cambiar cómo ves el resto de tu vida.",
-      "Flowhaven no fue diseñada. Fue reconocida. La constatación de que Málaga — uno de los destinos más subestimados de Europa, una ciudad de extraordinario patrimonio vinícola, arquitectura morisca ancestral y una de las costas más generosas del mundo — merecía una experiencia a la altura de lo que realmente es.",
+      "Heaven Flow no fue diseñada. Fue reconocida. La constatación de que Málaga — uno de los destinos más subestimados de Europa, una ciudad de extraordinario patrimonio vinícola, arquitectura morisca ancestral y una de las costas más generosas del mundo — merecía una experiencia a la altura de lo que realmente es.",
       "No un tour. No una cata. No otro retiro de bienestar que promete transformación a través de un programa rebautizado.",
       "Algo más raro: un día en que cada elemento — el vino, el movimiento, la comida, el silencio — está en conversación tan precisa entre sí, que el huésped no se va sintiéndose entretenido. Se va sintiéndose reconocido.",
     ],
@@ -42,13 +42,13 @@ export const aboutContent = {
   philosophy: {
     en: {
       label: "The Philosophy",
-      headline: "We believe that luxury is not about addition.",
-      body: "The modern luxury traveller has already stayed in beautiful hotels. They have already eaten at Michelin-starred restaurants. They are not searching for more. They are searching for depth.\n\nAt Flowhaven, depth is our discipline. We keep groups intimate — never more than ten guests — because intimacy is not a limitation, it is the entire point. We source every ingredient locally not because it is fashionable, but because the fisherman who has worked the Málaga coast for forty years knows things about the sea that no supply chain ever will.\n\nWe are not interested in scale. We are interested in truth.",
+      headline: "We believe that peace is not about addition.",
+      body: "The modern traveller has already stayed in beautiful hotels. They have already eaten at Michelin-starred restaurants. They are not searching for more. They are searching for depth.\n\nAt Heaven Flow, depth is our discipline. We keep groups intimate — never more than ten guests — because intimacy is not a limitation, it is the entire point. We source every ingredient locally not because it is fashionable, but because the fisherman who has worked the Málaga coast for forty years knows things about the sea that no supply chain ever will.\n\nWe are not interested in scale. We are interested in truth.",
     },
     es: {
       label: "La Filosofía",
-      headline: "Creemos que el lujo no se trata de acumulación.",
-      body: "El viajero de lujo contemporáneo ya se ha alojado en hoteles hermosos. Ya ha comido en restaurantes con estrellas Michelin. No busca más. Busca profundidad.\n\nEn Flowhaven, la profundidad es nuestra disciplina. Mantenemos los grupos íntimos — nunca más de diez huéspedes — porque la intimidad no es una limitación, es el punto central. Obtenemos cada ingrediente localmente no porque esté de moda, sino porque el pescador que ha trabajado la costa malagueña durante cuarenta años sabe cosas del mar que ninguna cadena de suministro sabrá jamás.\n\nNo nos interesa la escala. Nos interesa la verdad.",
+      headline: "Creemos que la paz no se trata de acumulación.",
+      body: "El viajero contemporáneo ya se ha alojado en hoteles hermosos. Ya ha comido en restaurantes con estrellas Michelin. No busca más. Busca profundidad.\n\nEn Heaven Flow, la profundidad es nuestra disciplina. Mantenemos los grupos íntimos — nunca más de diez huéspedes — porque la intimidad no es una limitación, es el punto central. Obtenemos cada ingrediente localmente no porque esté de moda, sino porque el pescador que ha trabajado la costa malagueña durante cuarenta años sabe cosas del mar que ninguna cadena de suministro sabrá jamás.\n\nNo nos interesa la escala. Nos interesa la verdad.",
     },
   },
 
@@ -56,7 +56,7 @@ export const aboutContent = {
   team: {
     en: {
       label: "The People",
-      intro: "Flowhaven is a collaboration between three practitioners who have each spent years becoming genuinely expert in their field — and who believe those fields belong together.",
+      intro: "Heaven Flow is a collaboration between three practitioners who have each spent years becoming genuinely expert in their field — and who believe those fields belong together.",
       members: [
         {
           role: "Sommelier",
@@ -80,7 +80,7 @@ export const aboutContent = {
     },
     es: {
       label: "Las Personas",
-      intro: "Flowhaven es una colaboración entre tres profesionales que han pasado años convirtiéndose en verdaderos expertos en su campo — y que creen que esos campos pertenecen juntos.",
+      intro: "Heaven Flow es una colaboración entre tres profesionales que han pasado años convirtiéndose en verdaderos expertos en su campo — y que creen que esos campos pertenecen juntos.",
       members: [
         {
           role: "Sommelier",

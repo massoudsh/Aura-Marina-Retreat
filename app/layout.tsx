@@ -21,8 +21,8 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://flowhaven.co'),
   title: {
-    default: 'Flowhaven Málaga | Luxury Wine, Yoga & Coastal Cuisine',
-    template: '%s | Flowhaven Málaga',
+    default: 'Heaven Flow Málaga | Peaceful Wine, Yoga & Coastal Cuisine',
+    template: '%s | Heaven Flow Málaga',
   },
   description:
     'Where movement meets the vine — an immersive couples sanctuary in Málaga with restorative yoga, sommelier-led wine, and coastal dining.',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_GB',
     alternateLocale: 'es_ES',
-    siteName: 'Flowhaven',
+    siteName: 'Heaven Flow',
   },
 };
 

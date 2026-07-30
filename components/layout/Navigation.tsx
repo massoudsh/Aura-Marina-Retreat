@@ -23,7 +23,7 @@ const NAV_LINKS = (locale: Locale) => {
 export default function Navigation({ locale }: { locale: Locale }) {
   const [scrolled,   setScrolled]   = useState(false);
   const [menuOpen,   setMenuOpen]   = useState(false);
-  const pathname = usePathname();
+  const pathname = usePathname() ?? '';
   const nav      = ui.nav[locale];
 
   useEffect(() => {
@@ -47,7 +47,7 @@ export default function Navigation({ locale }: { locale: Locale }) {
           {/* Logo */}
           <Link href={`/${locale}`} className="flex items-center gap-3 text-soul hover:text-gold transition-colors duration-150">
             <Image src="/flowhaven-mark.svg" alt="" width={32} height={32} className="rounded-full" priority />
-            <span className="font-display text-xl font-light tracking-wider">Flowhaven</span>
+            <span className="font-display text-xl font-light tracking-wider">Heaven Flow</span>
           </Link>
 
           {/* Desktop nav */}
@@ -99,7 +99,7 @@ export default function Navigation({ locale }: { locale: Locale }) {
           <div className="container-site h-20 flex items-center justify-between">
             <div className="flex items-center gap-3 text-linen">
               <Image src="/flowhaven-mark.svg" alt="" width={32} height={32} className="rounded-full" priority />
-              <span className="font-display text-xl font-light">Flowhaven</span>
+              <span className="font-display text-xl font-light">Heaven Flow</span>
             </div>
             <button
               onClick={() => setMenuOpen(false)}

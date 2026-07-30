@@ -14,7 +14,7 @@ import type { Locale } from '@/types';
 export async function generateMetadata({ params: { locale } }: { params: { locale: Locale } }): Promise<Metadata> {
   const content = homeContent.hero[locale];
   return {
-    title: 'Flowhaven Málaga | Luxury Wine, Yoga & Coastal Cuisine',
+    title: 'Heaven Flow Málaga | Wine, Yoga & Coastal Cuisine',
     description: content.h2,
     alternates: {
       canonical: `/${locale}`,
@@ -32,12 +32,12 @@ export default async function HomePage({ params: { locale } }: { params: { local
   return (
     <>
       <Hero
-        label="Flowhaven"
+        label="Heaven Flow"
         h1={hero.h1}
         h2={hero.h2}
         cta={{ text: hero.cta, href: hero.ctaHref }}
         imageSrc={siteImages.homeHero}
-        imageAlt="Golden hour on the Málaga terrace — Flowhaven experience"
+        imageAlt="Golden hour on the Málaga terrace — Heaven Flow experience"
         fullscreen
       />
 

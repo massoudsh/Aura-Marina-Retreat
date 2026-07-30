@@ -8,6 +8,8 @@ export const siteImages = {
   diningChef:          '/assets/images/dining-chef.svg',
   wineryCellar:        '/assets/images/winery-cellar.svg',
   aboutTeam:           '/assets/images/about-team.svg',
+  journeyCouple:       '/assets/images/journey-couple.svg',
+  journeyHorizon:      '/assets/images/journey-horizon.svg',
 
   gallery: [
     { src: '/assets/images/experiences-yoga.svg',     alt: 'Morning movement on the terrace' },

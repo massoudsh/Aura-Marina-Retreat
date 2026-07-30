@@ -3,14 +3,14 @@ export const journeyContent = {
     en: {
       label: 'The Journey',
       title: 'See the Day Before You Live It.',
-      subtitle: 'From the first quiet breath to the last golden sip, this is the full arc of your day at Flowhaven — designed for couples who want beauty, ease, and a memory that feels unmistakably theirs.',
+      subtitle: 'From the first quiet breath to the last golden sip, this is the full arc of your day at Heaven Flow — designed for couples who want beauty, ease, and a memory that feels unmistakably theirs.',
       cta: 'Reserve Your Day',
       ctaHref: '/en/book',
     },
     es: {
       label: 'El Viaje',
       title: 'Vive el Día Antes de Llegar.',
-      subtitle: 'Desde la primera respiración tranquila hasta el último sorbo dorado, este es el recorrido completo de tu día en Flowhaven — diseñado para parejas que buscan belleza, calma y un recuerdo que se sienta totalmente suyo.',
+      subtitle: 'Desde la primera respiración tranquila hasta el último sorbo dorado, este es el recorrido completo de tu día en Heaven Flow — diseñado para parejas que buscan belleza, calma y un recuerdo que se sienta totalmente suyo.',
       cta: 'Reserva Tu Día',
       ctaHref: '/es/reservar',
     },
@@ -50,7 +50,7 @@ export const journeyContent = {
       {
         time: '13:30',
         title: 'Table, Salt, Sun',
-        feeling: 'Luxury becomes intimate.',
+        feeling: 'Peace becomes intimate.',
         body: 'The meal is coastal, seasonal, and quietly generous. Thoughtful plating. Local ingredients. Space to talk, laugh, linger, and feel fully looked after without ever feeling watched.',
       },
       {
@@ -88,7 +88,7 @@ export const journeyContent = {
       {
         time: '13:30',
         title: 'Mesa, Sal y Sol',
-        feeling: 'El lujo se vuelve íntimo.',
+        feeling: 'La paz se vuelve íntima.',
         body: 'La comida es costera, de temporada y generosamente sutil. Emplatado cuidado. Ingredientes locales. Espacio para hablar, reír, quedarse y sentirse atendidos sin sentirse observados.',
       },
       {
@@ -112,7 +112,7 @@ export const journeyContent = {
         'Confident from the first minute — no awkwardness, no uncertainty',
         'Relaxed in your body, even if yoga is new to you',
         'Genuinely taken care of, without stiffness or ceremony',
-        'Proud you chose something more intimate than a typical luxury outing',
+        'Proud you chose something more intimate than a typical polished outing',
       ],
     },
     es: {
@@ -121,7 +121,7 @@ export const journeyContent = {
         'Confianza desde el primer minuto — sin incomodidad ni incertidumbre',
         'Relajación en el cuerpo, incluso si el yoga es nuevo para ti',
         'Verdadero cuidado, sin rigidez ni ceremonia',
-        'Orgullo de haber elegido algo más íntimo que una salida de lujo típica',
+        'Orgullo de haber elegido algo más íntimo que una salida tradicional y pulida',
       ],
     },
   },

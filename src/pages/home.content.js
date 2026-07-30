@@ -11,20 +11,20 @@ export const homeContent = {
   hero: {
     en: {
       h1: "This Is Not a Tour. This Is a Transformation.",
-      h2: "Flowhaven is a curated sanctuary day in the heart of Málaga — crafted for those who seek presence, beauty, and the quiet luxury of being entirely here.",
+      h2: "Heaven Flow is a curated sanctuary day in the heart of Málaga — crafted for those who seek presence, beauty, and nature while being entirely here.",
       cta: "Begin Your Journey",
       ctaHref: "/en/book",
     },
     es: {
       h1: "Esto No Es un Tour. Es una Transformación.",
-      h2: "Flowhaven es un día santuario en el corazón de Málaga — diseñado para quienes buscan presencia, belleza y el lujo silencioso de estar completamente aquí.",
+      h2: "Heaven Flow es un día santuario en el corazón de Málaga — diseñado para quienes buscan presencia, belleza y naturaleza mientras están completamente aquí.",
       cta: "Comienza Tu Viaje",
       ctaHref: "/es/reservar",
     },
   },
 
   // ─── VALUE PROPOSITIONS (3 PILLARS) ─────────────────────────────────────────
-  // B2: History / Wellness / Sensory — tone must flow History → Wellness → Luxury
+  // B2: History / Wellness / Sensory — tone must flow History → Wellness → Peaceful
   valueProp: {
     en: [
       {
@@ -39,8 +39,8 @@ export const homeContent = {
       },
       {
         id: "sensory",
-        label: "Sensory Experience & Luxury",
-        body: "Luxury here is not marble and chandeliers. It is the weight of a cold, perfectly poured glass of Moscatel on a warm afternoon. It is the silence between yoga poses when you realize you have not thought of your inbox in two hours. It is a plate of grilled dorada, caught that morning, dressed in nothing but lemon and sea salt, placed before you as the sun descends over the harbour. This is the luxury of total sensory immersion — curated so precisely that it feels entirely effortless.",
+        label: "Sensory Experience & Peace",
+        body: "Peace here is not marble and chandeliers. It is the weight of a cold, perfectly poured glass of Moscatel on a warm afternoon. It is the silence between yoga poses when you realize you have not thought of your inbox in two hours. It is a plate of grilled dorada, caught that morning, dressed in nothing but lemon and sea salt, placed before you as the sun descends over the harbour. This is the peace of total sensory immersion — curated so precisely that it feels entirely effortless.",
       },
     ],
     es: [
@@ -56,8 +56,8 @@ export const homeContent = {
       },
       {
         id: "sensory",
-        label: "Experiencia Sensorial y Lujo",
-        body: "El lujo aquí no es mármol ni lámparas de araña. Es el peso de una copa fría de Moscatel perfectamente servida en una tarde cálida. Es el silencio entre las posturas de yoga cuando te das cuenta de que no has pensado en tu bandeja de entrada durante dos horas. Es un plato de dorada a la parrilla, capturada esa mañana, aderezada únicamente con limón y sal marina, colocada ante ti mientras el sol desciende sobre el puerto. Este es el lujo de la inmersión sensorial total — curado con tanta precisión que parece completamente natural.",
+        label: "Experiencia Sensorial y Paz",
+        body: "La paz aquí no es mármol ni lámparas de araña. Es el peso de una copa fría de Moscatel perfectamente servida en una tarde cálida. Es el silencio entre las posturas de yoga cuando te das cuenta de que no has pensado en tu bandeja de entrada durante dos horas. Es un plato de dorada a la parrilla, capturada esa mañana, aderezada únicamente con limón y sal marina, colocada ante ti mientras el sol desciende sobre el puerto. Esta es la paz de la inmersión sensorial total — curada con tanta precisión que parece completamente natural.",
       },
     ],
   },

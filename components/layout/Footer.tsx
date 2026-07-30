@@ -20,7 +20,7 @@ export default function Footer({ locale }: { locale: Locale }) {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
               <Image src="/flowhaven-mark.svg" alt="" width={36} height={36} className="rounded-full" />
-              <p className="font-display text-2xl font-light text-linen">Flowhaven</p>
+              <p className="font-display text-2xl font-light text-linen">Heaven Flow</p>
             </div>
             <p className="font-body text-caption text-sage leading-relaxed mb-6 max-w-xs">{f.brand}</p>
             <p className="font-body text-caption text-gold">{f.socialProof}</p>

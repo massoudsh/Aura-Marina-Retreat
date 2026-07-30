@@ -68,12 +68,12 @@ async function sendConfirmationEmail(data: { name: string; email: string; date: 
   if (!process.env.RESEND_API_KEY) return;
 
   const subject = data.locale === 'en'
-    ? 'Your Flowhaven enquiry has been received'
-    : 'Hemos recibido tu consulta de Flowhaven';
+    ? 'Your Heaven Flow enquiry has been received'
+    : 'Hemos recibido tu consulta de Heaven Flow';
 
   const body = data.locale === 'en'
-    ? `Dear ${data.name},\n\nThank you for reaching out. Someone from the Flowhaven team will be in touch within 24 hours.\n\n— The Flowhaven Team`
-    : `Estimado/a ${data.name},\n\nGracias por contactarnos. Alguien del equipo se pondrá en contacto contigo en 24 horas.\n\n— El Equipo de Flowhaven`;
+    ? `Dear ${data.name},\n\nThank you for reaching out. Someone from the Heaven Flow team will be in touch within 24 hours.\n\n— The Heaven Flow Team`
+    : `Estimado/a ${data.name},\n\nGracias por contactarnos. Alguien del equipo se pondrá en contacto contigo en 24 horas.\n\n— El Equipo de Heaven Flow`;
 
   await fetch('https://api.resend.com/emails', {
     method: 'POST',
