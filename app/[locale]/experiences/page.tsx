@@ -29,6 +29,7 @@ export default function ExperiencesPage({ params: { locale } }: { params: { loca
   const included  = experiencesContent.inclusions[locale];
   const pricing   = experiencesContent.pricing[locale];
   const timeline  = experiencesContent.timeline[locale];
+  const addOns    = experiencesContent.addOns[locale];
   const banner    = homeContent.bookingBanner[locale];
 
   return (
@@ -97,6 +98,41 @@ export default function ExperiencesPage({ params: { locale } }: { params: { loca
             <a href={`/${locale === 'en' ? 'en' : 'es'}/book?type=private`} className="btn btn-ghost w-full justify-center">
               {pricing.ctaSecondary}
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Add-On Experiences */}
+      <section className="section-padding bg-soul">
+        <div className="container-site max-w-4xl mx-auto">
+          <p className="section-label mb-4 text-center">{addOns.label}</p>
+          <p className="font-body text-body-lg text-linen/60 max-w-2xl mx-auto mb-16 text-center">
+            {addOns.intro}
+          </p>
+          <div className="grid md:grid-cols-2 gap-8">
+            {addOns.items.map((item, i) => {
+              const addOnImage = i === 0 ? siteImages.experiencesGardenWalk : siteImages.experiencesYachtCharter;
+              return (
+                <div key={i} className="bg-soul border border-gold/20 rounded-sm overflow-hidden">
+                  <div className="relative w-full aspect-[4/3]">
+                    <Image
+                      src={addOnImage}
+                      alt={item.title}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-8">
+                    <h3 className="font-display text-2xl text-linen font-light mb-3">{item.title}</h3>
+                    <p className="font-body text-body-lg text-linen/70 leading-relaxed mb-6">{item.body}</p>
+                    <div className="flex items-center justify-between border-t border-gold/20 pt-4">
+                      <span className="font-body text-caption text-sage uppercase tracking-widest">{item.duration}</span>
+                      <span className="font-body text-gold font-medium">{item.price}</span>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

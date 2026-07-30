@@ -98,6 +98,7 @@ export const experiencesContent = {
       { time: "10:15", event: "Sommelier Wine Tasting — Movement I" },
       { time: "11:30", event: "Bodega Storytelling & Terroir Walk" },
       { time: "13:00", event: "Chef's Table Lunch — Seafood Menu" },
+      { time: "14:30", event: "Garden & Beach Walk" },
       { time: "15:30", event: "Aperitivo Hour" },
       { time: "16:30", event: "Restorative Yoga & Breathwork (45 min)" },
       { time: "17:30", event: "Herbal Tisane Ceremony" },
@@ -109,11 +110,52 @@ export const experiencesContent = {
       { time: "10:15", event: "Cata de Vino con Sommelier — Movimiento I" },
       { time: "11:30", event: "Narrativa de la Bodega y Paseo por el Terroir" },
       { time: "13:00", event: "Almuerzo en Mesa del Chef — Menú de Mariscos" },
+      { time: "14:30", event: "Paseo por el Jardín y la Playa" },
       { time: "15:30", event: "Hora del Aperitivo" },
       { time: "16:30", event: "Yoga Restaurador y Respiración (45 min)" },
       { time: "17:30", event: "Ceremonia de Tisana" },
       { time: "18:00", event: "Despedida y Obsequio para Llevar" },
     ],
+  },
+
+  // ─── ADD-ON EXPERIENCES ──────────────────────────────────────────────────────
+  addOns: {
+    en: {
+      label: "Add-On Experiences",
+      intro: "For guests who wish to extend their day beyond the Sunset Harmony itinerary, we offer additional ways to spend your hours in Málaga.",
+      items: [
+        {
+          title: "Garden & Beach Walk",
+          body: "A slow, guided walk through our private botanical garden and down to the shoreline — a quiet interval between movements of the day, taken at whatever pace feels right.",
+          duration: "30–45 min",
+          price: "Included",
+        },
+        {
+          title: "Private Yacht Charter",
+          body: "Extend your day onto the water. Our partner captains take small groups along the Málaga coastline for a half-day or full-day charter — swimming coves, a sommelier-poured toast at anchor, and sunset views found nowhere on land.",
+          duration: "Half-day or full-day",
+          price: "From €950 per charter (up to 8 guests)",
+        },
+      ],
+    },
+    es: {
+      label: "Experiencias Adicionales",
+      intro: "Para huéspedes que deseen extender su día más allá del itinerario Sunset Harmony, ofrecemos formas adicionales de vivir tus horas en Málaga.",
+      items: [
+        {
+          title: "Paseo por el Jardín y la Playa",
+          body: "Un paseo lento y guiado por nuestro jardín botánico privado hasta la orilla del mar — un intervalo tranquilo entre los movimientos del día, a tu propio ritmo.",
+          duration: "30–45 min",
+          price: "Incluido",
+        },
+        {
+          title: "Alquiler Privado de Yate",
+          body: "Extiende tu día sobre el agua. Nuestros capitanes socios llevan a pequeños grupos por la costa de Málaga en un chárter de medio día o día completo — calas para nadar, un brindis servido por el sommelier al ancla, y vistas al atardecer que no se encuentran en tierra.",
+          duration: "Medio día o día completo",
+          price: "Desde €950 por chárter (hasta 8 huéspedes)",
+        },
+      ],
+    },
   },
 
 };

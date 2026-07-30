@@ -10,6 +10,8 @@ export const siteImages = {
   aboutTeam:           '/assets/images/about-team.svg',
   journeyCouple:       '/assets/images/journey-couple.svg',
   journeyHorizon:      '/assets/images/journey-horizon.svg',
+  experiencesGardenWalk:     '/assets/images/experiences-garden-walk.jpg',
+  experiencesYachtCharter:   '/assets/images/experiences-yacht-charter.jpg',
 
   gallery: [
     { src: '/assets/images/experiences-yoga.svg',     alt: 'Morning movement on the terrace' },
