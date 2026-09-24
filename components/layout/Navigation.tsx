@@ -58,7 +58,7 @@ export default function Navigation({ locale }: { locale: Locale }) {
                   href={item.href}
                   className={cn(
                     'font-body text-caption font-medium uppercase tracking-[0.12em] transition-colors duration-150',
-                    pathname === item.href ? 'text-gold' : 'text-soul hover:text-gold'
+                    pathname === item.href || pathname.startsWith(`${item.href}/`) ? 'text-gold' : 'text-soul hover:text-gold'
                   )}
                 >
                   {item.label}
@@ -82,8 +82,9 @@ export default function Navigation({ locale }: { locale: Locale }) {
 
           {/* Mobile burger */}
           <button
-            className="lg:hidden flex flex-col gap-1.5 p-2"
+            className="lg:hidden flex flex-col gap-1.5 p-3 rounded-full hover:bg-soul/5 transition-colors"
             onClick={() => setMenuOpen(true)}
+            aria-expanded={menuOpen}
             aria-label={ui.accessibility[locale].menuOpen}
           >
             <span className="w-6 h-px bg-soul block" />
@@ -103,7 +104,7 @@ export default function Navigation({ locale }: { locale: Locale }) {
             </div>
             <button
               onClick={() => setMenuOpen(false)}
-              className="text-linen font-body text-2xl leading-none"
+              className="text-linen/80 hover:text-linen hover:bg-linen/10 rounded-full p-2 text-3xl leading-none transition-colors"
               aria-label={ui.accessibility[locale].menuClose}
             >
               ×

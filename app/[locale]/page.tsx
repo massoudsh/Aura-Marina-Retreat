@@ -36,8 +36,8 @@ export default async function HomePage({ params: { locale } }: { params: { local
         h1={hero.h1}
         h2={hero.h2}
         cta={{ text: hero.cta, href: hero.ctaHref }}
-        imageSrc={siteImages.homeHero}
-        imageAlt="Golden hour on the Málaga terrace — Heaven Flow experience"
+        imageSrc={siteImages.retreatCoupleYacht}
+        imageAlt="A couple moving from the garden to the sea at golden hour — Heaven Flow experience"
         fullscreen
       />
 
@@ -52,7 +52,7 @@ export default async function HomePage({ params: { locale } }: { params: { local
           description={pkg.description}
           priceFrom={pkg.priceFrom}
           cta={{ text: pkg.cta, href: pkg.ctaHref }}
-          imageSrc={siteImages.experiencesYoga}
+          imageSrc={siteImages.dayJourney}
           locale={locale}
         />
       </FadeIn>

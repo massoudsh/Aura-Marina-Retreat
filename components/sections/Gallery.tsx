@@ -18,9 +18,12 @@ export default function Gallery({ locale }: GalleryProps) {
   return (
     <section className="section-padding bg-soul">
       <div className="container-site">
-        <div className="flex items-baseline justify-between mb-10">
-          <p className="section-label">{label}</p>
-          <p className="hidden sm:block font-body text-caption text-sage italic">{hint}</p>
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-10">
+          <div>
+            <p className="section-label mb-3">{label}</p>
+            <h2 className="font-display text-3xl lg:text-4xl text-linen font-light max-w-none">{locale === 'en' ? 'A day in still frames.' : 'Un día en imágenes.'}</h2>
+          </div>
+          <p className="font-body text-caption text-sage italic">{hint}</p>
         </div>
 
         {/* Grid */}

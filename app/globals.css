@@ -4,6 +4,9 @@
 
 @layer base {
   html { scroll-behavior: smooth; }
+  body { min-width: 320px; overflow-x: hidden; }
+  a, button, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+  :focus-visible { outline: 2px solid theme('colors.gold'); outline-offset: 4px; }
 
   h1, h2, h3, h4 {
     @apply font-display font-light text-soul;

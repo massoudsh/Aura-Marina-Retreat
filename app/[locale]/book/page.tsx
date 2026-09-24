@@ -91,8 +91,8 @@ export default function BookPage({ params: { locale }, searchParams }: BookPageP
         </div>
       </div>
 
-      <div className="container-site py-20">
-        <div className="grid lg:grid-cols-3 gap-16">
+      <div className="container-site py-20 lg:py-28">
+        <div className="grid lg:grid-cols-[minmax(0,1.5fr)_minmax(280px,.7fr)] gap-12 lg:gap-20">
 
           {/* Form */}
           <div className="lg:col-span-2">

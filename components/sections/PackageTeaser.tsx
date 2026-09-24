@@ -16,14 +16,16 @@ export default function PackageTeaser({ label, title, description, priceFrom, ct
     <section className="section-padding bg-soul">
       <div className="container-site grid lg:grid-cols-2 gap-16 items-center">
         {/* Image */}
-        <div className="relative aspect-[4/5] overflow-hidden rounded-sm shadow-deep order-2 lg:order-1">
+        <div className="relative aspect-[4/5] overflow-hidden rounded-sm shadow-deep order-2 lg:order-1 group">
           <Image
             src={imageSrc}
             alt={title}
             fill
-            className="object-cover object-center"
+            className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
+          <div className="absolute inset-0 bg-gradient-to-t from-soul/35 to-transparent" />
+          <span className="absolute bottom-5 left-5 font-body text-[10px] text-linen uppercase tracking-[.2em]">Málaga · Full day</span>
         </div>
 
         {/* Content */}
