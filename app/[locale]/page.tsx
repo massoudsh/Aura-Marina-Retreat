@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Hero from '@/components/sections/Hero';
 import ValueProps from '@/components/sections/ValueProps';
+import MarketReadyFeatures from '@/components/sections/MarketReadyFeatures';
 import PackageTeaser from '@/components/sections/PackageTeaser';
 import BookingBanner from '@/components/sections/BookingBanner';
 import Testimonials from '@/components/sections/Testimonials';
@@ -40,6 +41,10 @@ export default async function HomePage({ params: { locale } }: { params: { local
         imageAlt="A couple moving from the garden to the sea at golden hour — Heaven Flow experience"
         fullscreen
       />
+
+      <FadeIn>
+        <MarketReadyFeatures locale={locale} />
+      </FadeIn>
 
       <FadeIn>
         <ValueProps pillars={pillars} locale={locale} />
