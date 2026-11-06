@@ -1,4 +1,5 @@
 import { bookingContent } from '@/src/pages/booking.content';
+import { t } from '@/lib/utils';
 import type { Locale } from '@/types';
 
 const WHATSAPP_NUMBER = bookingContent.contact.en.whatsapp.replace(/\s/g, '');
@@ -76,7 +77,7 @@ export default function MarketReadyFeatures({ locale }: { locale: Locale }) {
                   <p className="font-body text-caption text-soul/65 leading-relaxed">{feature.body}</p>
                   {isWhatsApp && (
                     <span className="mt-5 inline-flex items-center gap-2 font-body text-caption font-medium text-soul underline decoration-gold underline-offset-4">
-                      {locale === 'en' ? 'Open WhatsApp' : locale === 'es' ? 'Abrir WhatsApp' : 'باز کردن واتساپ'}
+                      {t(locale, { en: 'Open WhatsApp', es: 'Abrir WhatsApp', fa: 'باز کردن واتساپ' })}
                       <span aria-hidden>→</span>
                     </span>
                   )}
