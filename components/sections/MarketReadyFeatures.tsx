@@ -1,4 +1,13 @@
+import { bookingContent } from '@/src/pages/booking.content';
 import type { Locale } from '@/types';
+
+const WHATSAPP_NUMBER = bookingContent.contact.en.whatsapp.replace(/\s/g, '');
+
+const WHATSAPP_MESSAGE: Record<Locale, string> = {
+  en: 'Hello Heaven Flow, I would like to ask about the Sunset Harmony day in Málaga.',
+  es: 'Hola Heaven Flow, me gustaría preguntar sobre el día Sunset Harmony en Málaga.',
+  fa: 'سلام هیون فلو، می‌خواهم دربارهٔ روز هماهنگی غروب در مالاگا بپرسم.',
+};
 
 const copy = {
   en: {
@@ -44,6 +53,7 @@ const copy = {
 
 export default function MarketReadyFeatures({ locale }: { locale: Locale }) {
   const content = copy[locale];
+  const whatsappHref = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE[locale])}`;
 
   return (
     <section className="section-padding bg-[#ebe4d8]">
@@ -57,16 +67,39 @@ export default function MarketReadyFeatures({ locale }: { locale: Locale }) {
           </div>
 
           <div className="grid sm:grid-cols-2 gap-px bg-soul/15 border border-soul/15">
-            {content.features.map((feature, index) => (
-              <article
-                key={feature.number}
-                className={`bg-[#ebe4d8] p-7 lg:p-9 min-h-[220px] transition-colors duration-300 hover:bg-linen ${index === content.features.length - 1 ? 'sm:col-span-2 lg:col-span-1' : ''}`}
-              >
-                <span className="font-display text-4xl text-gold/70 font-light">{feature.number}</span>
-                <h3 className="font-display text-2xl text-soul font-light mt-8 mb-3 max-w-none">{feature.title}</h3>
-                <p className="font-body text-caption text-soul/65 leading-relaxed">{feature.body}</p>
-              </article>
-            ))}
+            {content.features.map((feature, index) => {
+              const isWhatsApp = index === 0;
+              const body = (
+                <>
+                  <span className="font-display text-4xl text-gold/70 font-light">{feature.number}</span>
+                  <h3 className="font-display text-2xl text-soul font-light mt-8 mb-3 max-w-none">{feature.title}</h3>
+                  <p className="font-body text-caption text-soul/65 leading-relaxed">{feature.body}</p>
+                  {isWhatsApp && (
+                    <span className="mt-5 inline-flex items-center gap-2 font-body text-caption font-medium text-soul underline decoration-gold underline-offset-4">
+                      {locale === 'en' ? 'Open WhatsApp' : locale === 'es' ? 'Abrir WhatsApp' : 'باز کردن واتساپ'}
+                      <span aria-hidden>→</span>
+                    </span>
+                  )}
+                </>
+              );
+              const className = `bg-[#ebe4d8] p-7 lg:p-9 min-h-[220px] transition-colors duration-300 hover:bg-linen ${index === content.features.length - 1 ? 'sm:col-span-2 lg:col-span-1' : ''}`;
+
+              return isWhatsApp ? (
+                <a
+                  key={feature.number}
+                  href={whatsappHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${className} block focus-visible:outline focus-visible:outline-2 focus-visible:outline-gold`}
+                >
+                  {body}
+                </a>
+              ) : (
+                <article key={feature.number} className={className}>
+                  {body}
+                </article>
+              );
+            })}
           </div>
         </div>
       </div>
