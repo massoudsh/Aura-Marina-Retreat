@@ -63,10 +63,31 @@ describe('Navigation — ES locale', () => {
     expect(screen.getAllByText('EN').length).toBeGreaterThan(0);
   });
 
-  it('Book CTA links to /es/book', () => {
+  it('Book CTA links to the localized Spanish booking route', () => {
     render(<Navigation locale="es" />);
-    const bookLinks = screen.getAllByRole('link').filter(l => l.getAttribute('href') === '/es/book');
+    const bookLinks = screen.getAllByRole('link').filter(l => l.getAttribute('href') === '/es/reservar');
     expect(bookLinks.length).toBeGreaterThan(0);
+  });
+});
+
+describe('Navigation — FA locale', () => {
+  it('renders Persian nav links', () => {
+    render(<Navigation locale="fa" />);
+    expect(screen.getAllByText('تجربه').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('غذا').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('شراب‌سازی').length).toBeGreaterThan(0);
+  });
+
+  it('Book CTA links to the localized Persian booking route', () => {
+    render(<Navigation locale="fa" />);
+    const bookLinks = screen.getAllByRole('link').filter(l => l.getAttribute('href') === '/fa/رزرو');
+    expect(bookLinks.length).toBeGreaterThan(0);
+  });
+
+  it('offers all three locale switches', () => {
+    render(<Navigation locale="fa" />);
+    const hrefs = screen.getAllByRole('link').map(l => l.getAttribute('href'));
+    expect(hrefs).toEqual(expect.arrayContaining(['/en', '/es', '/fa']));
   });
 });
 

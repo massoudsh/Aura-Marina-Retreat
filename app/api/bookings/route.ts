@@ -11,7 +11,7 @@ const bookingSchema = z.object({
   groupSize:  z.string(),
   dietary:    z.string().optional(),
   message:    z.string().optional(),
-  locale:     z.enum(['en', 'es']),
+  locale:     z.enum(['en', 'es', 'fa']),
 });
 
 export async function POST(req: NextRequest) {
@@ -64,16 +64,20 @@ export async function GET(req: NextRequest) {
   return NextResponse.json({ bookings: data });
 }
 
-async function sendConfirmationEmail(data: { name: string; email: string; date: string; experience: string; locale: 'en' | 'es' }) {
+async function sendConfirmationEmail(data: { name: string; email: string; date: string; experience: string; locale: 'en' | 'es' | 'fa' }) {
   if (!process.env.RESEND_API_KEY) return;
 
-  const subject = data.locale === 'en'
-    ? 'Your Heaven Flow enquiry has been received'
-    : 'Hemos recibido tu consulta de Heaven Flow';
+  const subject = {
+    en: 'Your Heaven Flow enquiry has been received',
+    es: 'Hemos recibido tu consulta de Heaven Flow',
+    fa: 'درخواست شما در هیون فلو دریافت شد',
+  }[data.locale];
 
-  const body = data.locale === 'en'
-    ? `Dear ${data.name},\n\nThank you for reaching out. Someone from the Heaven Flow team will be in touch within 24 hours.\n\n— The Heaven Flow Team`
-    : `Estimado/a ${data.name},\n\nGracias por contactarnos. Alguien del equipo se pondrá en contacto contigo en 24 horas.\n\n— El Equipo de Heaven Flow`;
+  const body = {
+    en: `Dear ${data.name},\n\nThank you for reaching out. Someone from the Heaven Flow team will be in touch within 24 hours.\n\n— The Heaven Flow Team`,
+    es: `Estimado/a ${data.name},\n\nGracias por contactarnos. Alguien del equipo se pondrá en contacto contigo en 24 horas.\n\n— El Equipo de Heaven Flow`,
+    fa: `${data.name} عزیز،\n\nاز اینکه با ما تماس گرفتید سپاسگزاریم. یکی از اعضای تیم هیون فلو ظرف ۲۴ ساعت با شما تماس می‌گیرد.\n\n— تیم هیون فلو`,
+  }[data.locale];
 
   await fetch('https://api.resend.com/emails', {
     method: 'POST',

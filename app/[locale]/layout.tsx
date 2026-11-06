@@ -3,7 +3,7 @@ import { getMessages, getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import Navigation from '@/components/layout/Navigation';
 import Footer from '@/components/layout/Footer';
-import type { Locale } from '@/types';
+import { isRtl, type Locale } from '@/types';
 
 interface LocaleLayoutProps {
   children: React.ReactNode;
@@ -15,20 +15,20 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   return {
     alternates: {
       canonical: `/${locale}`,
-      languages: { en: '/en', es: '/es' },
+      languages: { en: '/en', es: '/es', fa: '/fa' },
     },
   };
 }
 
 export function generateStaticParams() {
-  return [{ locale: 'en' }, { locale: 'es' }];
+  return [{ locale: 'en' }, { locale: 'es' }, { locale: 'fa' }];
 }
 
 export default async function LocaleLayout({ children, params: { locale } }: LocaleLayoutProps) {
   const messages = await getMessages();
 
   return (
-    <html lang={locale} dir="ltr">
+    <html lang={locale} dir={isRtl(locale) ? 'rtl' : 'ltr'}>
       <body>
         <NextIntlClientProvider messages={messages}>
           <Navigation locale={locale} />

@@ -1,3 +1,4 @@
+import { t } from '@/lib/utils';
 import type { Locale } from '@/types';
 
 const TESTIMONIALS = {
@@ -29,6 +30,20 @@ const TESTIMONIALS = {
       author: "Max S.", location: "Barcelona",
     },
   ],
+  fa: [
+    {
+      quote: "در بوردو، توسکانی و درهٔ دورو در کات‌های شراب شرکت کرده‌ام. آنچه در آن زیرزمین در مالاگا رخ داد متفاوت بود. کمتر شبیه درس بود و بیشتر شبیه اعتراف.",
+      author: "م.ت.", location: "لندن",
+    },
+    {
+      quote: "هیون فلو آگاهانه‌ترین حس آرامشی است که سال‌ها تجربه کرده‌ام. هر جزئیات — از کارت خوش‌آمدگویی دست‌نویس تا دمنوش پایانی — سنجیده بود. نمایشی نبود. واقعی بود.",
+      author: "س.ل.", location: "نیویورک",
+    },
+    {
+      quote: "برای شراب آمدم. با درکی از سکوت رفتم که نمی‌دانستم دنبالش هستم.",
+      author: "مکس س.", location: "بارسلونا",
+    },
+  ],
 };
 
 export default function Testimonials({ locale }: { locale: Locale }) {
@@ -38,7 +53,7 @@ export default function Testimonials({ locale }: { locale: Locale }) {
     <section className="section-padding bg-linen">
       <div className="container-site">
         <p className="section-label mb-16 text-center">
-          {locale === 'en' ? 'Guest Voices' : 'Voces de Huéspedes'}
+          {t(locale, { en: 'Guest Voices', es: 'Voces de Huéspedes', fa: 'صدای مهمانان' })}
         </p>
         <div className="grid lg:grid-cols-3 gap-10">
           {items.map((item, i) => (

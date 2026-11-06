@@ -1,4 +1,12 @@
-export type Locale = 'en' | 'es';
+export type Locale = 'en' | 'es' | 'fa';
+
+export const LOCALES: readonly Locale[] = ['en', 'es', 'fa'] as const;
+
+export const RTL_LOCALES: readonly Locale[] = ['fa'] as const;
+
+export function isRtl(locale: Locale): boolean {
+  return RTL_LOCALES.includes(locale);
+}
 
 export interface PageProps {
   params: { locale: Locale };

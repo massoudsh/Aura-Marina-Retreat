@@ -1,15 +1,23 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { ui } from '@/src/components/ui.copy';
-import type { Locale } from '@/types';
+import { t } from '@/lib/utils';
+import { LOCALES, type Locale } from '@/types';
+
+const FOOTER_ROUTES: Record<string, Record<Locale, string>> = {
+  experiences: { en: '/en/experiences', es: '/es/experiencias', fa: '/fa/تجربه‌ها' },
+  dining:      { en: '/en/dining',      es: '/es/cocina',       fa: '/fa/غذا' },
+  winery:      { en: '/en/winery',      es: '/es/bodega',       fa: '/fa/شراب‌سازی' },
+  about:       { en: '/en/about',       es: '/es/nosotros',     fa: '/fa/درباره-ما' },
+  book:        { en: '/en/book',        es: '/es/reservar',     fa: '/fa/رزرو' },
+};
 
 export default function Footer({ locale }: { locale: Locale }) {
   const f = ui.footer[locale];
-  const otherLocale = locale === 'en' ? 'es' : 'en';
   const cols = [
-    { title: locale === 'en' ? 'Experience' : 'Experiencia', items: f.columns.experiences, hrefs: ['experiences','dining','winery','retreats'] },
-    { title: locale === 'en' ? 'Company' : 'Empresa',       items: f.columns.company,     hrefs: ['about','#press','book?type=gift','#sustainability'] },
-    { title: locale === 'en' ? 'Contact' : 'Contacto',      items: f.columns.contact,     hrefs: ['book','#whatsapp','#privacy','#terms'] },
+    { title: t(locale, { en: 'Experience', es: 'Experiencia', fa: 'تجربه' }), items: f.columns.experiences, hrefs: ['experiences','dining','winery','retreats'] },
+    { title: t(locale, { en: 'Company', es: 'Empresa', fa: 'شرکت' }),         items: f.columns.company,     hrefs: ['about','#press','book?type=gift','#sustainability'] },
+    { title: t(locale, { en: 'Contact', es: 'Contacto', fa: 'تماس' }),        items: f.columns.contact,     hrefs: ['book','#whatsapp','#privacy','#terms'] },
   ];
 
   return (
@@ -34,7 +42,7 @@ export default function Footer({ locale }: { locale: Locale }) {
                 {col.items.map((item: string, i: number) => (
                   <li key={item}>
                     <Link
-                      href={`/${locale}/${col.hrefs[i]}`}
+                      href={FOOTER_ROUTES[col.hrefs[i]]?.[locale] ?? `/${locale}/${col.hrefs[i]}`}
                       className="font-body text-caption text-sage hover:text-linen transition-colors duration-150"
                     >
                       {item}
@@ -56,12 +64,17 @@ export default function Footer({ locale }: { locale: Locale }) {
             <Link href={f.links.privacy} className="font-body text-caption text-sage hover:text-linen transition-colors duration-150">
               {f.links.privacy}
             </Link>
-            <Link
-              href={`/${otherLocale}`}
-              className="font-body text-caption text-sage hover:text-linen transition-colors duration-150 uppercase tracking-widest"
-            >
-              {otherLocale.toUpperCase()}
-            </Link>
+            {LOCALES.map((code) => (
+              <Link
+                key={code}
+                href={`/${code}`}
+                hrefLang={code}
+                aria-current={code === locale ? 'true' : undefined}
+                className={`font-body text-caption uppercase tracking-widest transition-colors duration-150 ${code === locale ? 'text-gold' : 'text-sage hover:text-linen'}`}
+              >
+                {code.toUpperCase()}
+              </Link>
+            ))}
           </div>
         </div>
       </div>

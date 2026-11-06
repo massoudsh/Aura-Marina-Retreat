@@ -22,6 +22,13 @@ export const ui = {
       gift:        { text: "Regala Este Momento",         href: "/es/reservar?tipo=regalo" },
       urgent:      { text: "Reservar Ahora — Plazas Limitadas", href: "/es/reservar" },
     },
+    fa: {
+      discover:    { text: "کشف تجربه",                   href: "/fa/تجربه‌ها" },
+      desire:      { text: "رزرو روز آرامش من",           href: "/fa/رزرو" },
+      commit:      { text: "جای من را تضمین کن",          href: "/fa/رزرو" },
+      gift:        { text: "این لحظه را هدیه بده",        href: "/fa/رزرو?type=gift" },
+      urgent:      { text: "همین حالا رزرو کنید — ظرفیت محدود", href: "/fa/رزرو" },
+    },
   },
 
   // ─── NAVIGATION ──────────────────────────────────────────────────────────────
@@ -41,6 +48,14 @@ export const ui = {
       winery:     "La Bodega",
       about:      "Nuestra Historia",
       book:       "Reservar",
+    },
+    fa: {
+      experience: "تجربه",
+      journey:    "سفر",
+      dining:     "غذا",
+      winery:     "شراب‌سازی",
+      about:      "داستان ما",
+      book:       "رزرو",
     },
   },
 
@@ -72,6 +87,20 @@ export const ui = {
       {
         question: "¿Qué pasa si tengo una alergia o restricción dietética?",
         answer: "Tu bienestar es nuestro propósito completo, y el cuidado dietético es una parte fundamental de ello. Pedimos a todos los huéspedes que compartan cualquier alergia, intolerancia o preferencia en el momento de la reserva. Nuestro chef diseña en torno a tus necesidades, no a pesar de ellas. Podemos acomodar la mayoría de los requisitos sin comprometer la calidad ni la intención de la comida. Si no estás seguro, contáctanos directamente y tendremos una conversación personal antes de tu llegada.",
+      },
+    ],
+    fa: [
+      {
+        question: "کد پوشش چیست؟",
+        answer: "کد پوشش رسمی وجود ندارد — فقط دعوتی به راحتی و آسودگی. برای جلسات یوگا لایه‌هایی پیشنهاد می‌کنیم که آزادانه در آن حرکت کنید و برای تجربه غذاخوری چیزی که در آن احساس زیبایی کنید. نور اندلس همه‌چیز را زیبا می‌کند؛ فقط پیشنهاد می‌کنیم طوری بپوشید که لباس را فراموش کنید و کاملاً در لحظه باشید.",
+      },
+      {
+        question: "آیا برای مبتدی‌ها مناسب است — هم در یوگا و هم در شراب؟",
+        answer: "قطعاً. هیون فلو از پایه برای کنجکاوها طراحی شده، نه متخصص‌ها. جلسات یوگا کاملاً در دسترس است — تجربهٔ قبلی لازم نیست، فقط آمادگی. سوملیه ما هم دنیای شراب را به‌جای ترسناک، دلپذیر می‌کند. بسیاری از مهمانان با دانش کم می‌آیند و با پیوندی عمیق با هر دو می‌روند. تنها شرط بودن در اینجا، خواستنِ حضور است.",
+      },
+      {
+        question: "اگر حساسیت یا محدودیت غذایی داشته باشم چه؟",
+        answer: "سلامتی شما تمام هدف ماست و توجه به رژیم غذایی بخشی بنیادین از آن است. از همه مهمانان می‌خواهیم هنگام رزرو حساسیت، عدم تحمل یا ترجیح‌های خود را بگویند. سرآشپز ما بر اساس نیازهای شما طراحی می‌کند، نه به‌رغم آن‌ها. بیشتر نیازها را بدون کاهش کیفیت یا نیت غذا پوشش می‌دهیم. اگر مطمئن نیستید، پیش از رسیدن مستقیماً با ما تماس بگیرید.",
       },
     ],
   },
@@ -108,6 +137,22 @@ export const ui = {
         experiences: ["La Experiencia", "Cocina", "La Bodega", "Retiros"],
         company:     ["Nosotros", "Prensa", "Vouchers de Regalo", "Sostenibilidad"],
         contact:     ["Contacto", "WhatsApp", "Política de Privacidad", "Términos"],
+      },
+    },
+    fa: {
+      tagline:     "جایی که حرکت به تاک می‌رسد — مالاگا، اندلس",
+      brand:       "هیون فلو یک تجربهٔ پناهگاهی تمام‌روز در مالاگا است که آموزش شراب با سوملیه، یوگای ترمیمی و آشپزی ساحلی با محصولات محلی را در هم می‌آمیزد. صمیمی به‌واسطهٔ طراحی. دگرگون‌کننده به‌واسطهٔ ماهیت.",
+      socialProof: "امتیاز ۵.۰ · مورد اعتماد مهمانانی از ۲۴ کشور",
+      copyright:   "© ۲۰۲۶ هیون فلو. تمامی حقوق محفوظ است.",
+      links: {
+        privacy:   "سیاست حفظ حریم خصوصی",
+        terms:     "شرایط و ضوابط",
+        cookies:   "تنظیمات کوکی",
+      },
+      columns: {
+        experiences: ["تجربه", "غذا", "شراب‌سازی", "اقامت‌ها"],
+        company:     ["درباره ما", "رسانه", "کارت هدیه", "پایداری"],
+        contact:     ["تماس", "واتساپ", "سیاست حفظ حریم خصوصی", "شرایط"],
       },
     },
   },
@@ -152,12 +197,32 @@ export const ui = {
         body:    "Gracias por contactarnos. Alguien del equipo de Heaven Flow se pondrá en contacto contigo en 24 horas para confirmar tu plaza y responder cualquier pregunta.",
       },
     },
+    fa: {
+      title:       "درخواست رزرو",
+      submit:      "ارسال درخواست",
+      trustLine:   "هر پیام را شخصاً می‌خوانیم. ظرف ۲۴ ساعت پاسخ می‌دهیم.",
+      fields: {
+        name:      { label: "نام و نام خانوادگی", placeholder: "نام شما" },
+        email:     { label: "ایمیل",              placeholder: "you@email.com" },
+        phone:     { label: "تلفن (اختیاری)",     placeholder: "+98 / +34..." },
+        date:      { label: "تاریخ مورد نظر",     placeholder: "یک تاریخ انتخاب کنید" },
+        experience:{ label: "تجربه",              options: ["پکیج هماهنگی غروب", "کارگاه شراب", "گروه خصوصی", "هنوز مطمئن نیستم"] },
+        groupSize: { label: "تعداد نفرات",        options: ["فقط من", "۲ نفر", "۳ تا ۵", "۶ تا ۱۰"] },
+        dietary:   { label: "یادداشت غذایی",      placeholder: "حساسیت، محدودیت یا ترجیح غذایی" },
+        message:   { label: "پیام شما",           placeholder: "هر چیز دیگری که می‌خواهید بگویید — چه چیزی شما را به اینجا آورد، چه انتظاری دارید..." },
+      },
+      confirmation: {
+        heading: "درخواست شما دریافت شد",
+        body:    "از اینکه با ما تماس گرفتید سپاسگزاریم. یکی از اعضای تیم هیون فلو ظرف ۲۴ ساعت با شما تماس می‌گیرد تا جای شما را تأیید کند و به پرسش‌ها پاسخ دهد.",
+      },
+    },
   },
 
   // ─── LANGUAGE TOGGLE ─────────────────────────────────────────────────────────
   langToggle: {
     en: { active: "EN", inactive: "ES", ariaLabel: "Switch to Spanish" },
     es: { active: "ES", inactive: "EN", ariaLabel: "Cambiar a inglés" },
+    fa: { active: "FA", inactive: "EN", ariaLabel: "تغییر به انگلیسی" },
   },
 
   // ─── ACCESSIBILITY LABELS ─────────────────────────────────────────────────
@@ -169,6 +234,10 @@ export const ui = {
     es: {
       menuOpen:  "Abrir menú de navegación",
       menuClose: "Cerrar menú de navegación",
+    },
+    fa: {
+      menuOpen:  "باز کردن منوی ناوبری",
+      menuClose: "بستن منوی ناوبری",
     },
   },
 
@@ -185,6 +254,12 @@ export const ui = {
       sub:     "Pero esta página no existe. Déjanos guiarte de vuelta.",
       cta:     "Volver a la Experiencia",
       ctaHref: "/es/",
+    },
+    fa: {
+      heading: "به جای زیبایی رسیده‌اید.",
+      sub:     "اما این صفحه وجود ندارد. بگذارید شما را بازگردانیم.",
+      cta:     "بازگشت به تجربه",
+      ctaHref: "/fa/",
     },
   },
 

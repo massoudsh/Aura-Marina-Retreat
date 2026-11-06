@@ -21,6 +21,11 @@ export const bookingContent = {
       h1: "Tu Día Empieza Aquí",
       sub: "Las plazas son intencionalmente limitadas. Cada consulta recibe una respuesta personal en 24 horas.",
     },
+    fa: {
+      label: "رزرو روز شما",
+      h1: "روز شما از اینجا آغاز می‌شود",
+      sub: "ظرفیت آگاهانه محدود است. هر درخواست ظرف ۲۴ ساعت پاسخ شخصی دریافت می‌کند.",
+    },
   },
 
   // ─── PRE-BOOKING NOTE ────────────────────────────────────────────────────────
@@ -41,6 +46,14 @@ export const bookingContent = {
         "También aprovechamos cada reserva para entender quién viene. Si tienes necesidades dietéticas, consideraciones físicas, o simplemente quieres contarnos qué esperas llevarte de este día — inclúyelo en tu mensaje. Nos ayuda a cuidarte mejor.",
       ],
     },
+    fa: {
+      label: "پیش از رزرو — یادداشتی از ما",
+      paragraphs: [
+        "هیون فلو تجربه‌ای کوچک و عمیقاً هدفمند است. هر جلسه را به ده مهمان محدود می‌کنیم — نه به‌عنوان تصمیم بازاریابی، بلکه چون تعداد بیشتر کیفیت آنچه ارائه می‌دهیم را کاهش می‌دهد.",
+        "این یعنی تاریخ‌ها سریع پر می‌شوند و ما بدون تأیید، جای موقت نگه نمی‌داریم. اگر تاریخی برایتان مهم است، توصیه می‌کنیم زودتر درخواست دهید.",
+        "همچنین برای هر رزرو لحظه‌ای وقت می‌گذاریم تا بدانیم چه کسی می‌آید. اگر نیاز غذایی، ملاحظهٔ جسمی دارید یا فقط می‌خواهید بگویید امیدوارید از این روز چه با خود ببرید — آن را در پیام خود بنویسید. این به ما کمک می‌کند بهتر از شما مراقبت کنیم.",
+      ],
+    },
   },
 
   // ─── CONTACT BLOCK ───────────────────────────────────────────────────────────
@@ -59,6 +72,13 @@ export const bookingContent = {
       email: "hola@wineandflow.com",
       hours: "Lunes a sábado, 9:00–18:00 CET",
     },
+    fa: {
+      label: "ترجیح می‌دهید مستقیم صحبت کنیم؟",
+      body: "بعضی چیزها را بهتر است گفت تا نوشت. اگر می‌خواهید پیش از رزرو با ما صحبت کنید — یا در حال برنامه‌ریزی یک گروه خصوصی یا مناسبت ویژه هستید — تماس یا پیام واتساپ شما را خوشحال می‌کند.",
+      whatsapp: "+34 612 345 678",
+      email: "hello@wineandflow.com",
+      hours: "دوشنبه تا شنبه، ۹:۰۰ تا ۱۸:۰۰ به وقت اروپای مرکزی",
+    },
   },
 
   // ─── GIFT VOUCHER CALLOUT ────────────────────────────────────────────────────
@@ -76,6 +96,13 @@ export const bookingContent = {
       note: "Perfecto para cumpleaños, aniversarios, regalos corporativos, o simplemente porque alguien merece un día que importe.",
       cta: "Consultar Vouchers de Regalo",
       ctaHref: "/es/reservar?tipo=regalo",
+    },
+    fa: {
+      label: "هدیهٔ حضور",
+      body: "کارت‌های هدیهٔ هیون فلو برای پکیج کامل هماهنگی غروب یا کارگاه شراب موجود است. هر کارت روی کاغذ پنبه‌ای ممتاز چاپ، با دست امضا و در پاکتی برندشده ارسال می‌شود.",
+      note: "مناسب برای تولد، سالگرد، هدیهٔ سازمانی یا فقط چون کسی سزاوار روزی است که اهمیت دارد.",
+      cta: "درخواست کارت هدیه",
+      ctaHref: "/fa/رزرو?type=gift",
     },
   },
 
@@ -99,6 +126,16 @@ export const bookingContent = {
       exploreLinks: [
         { label: "Conoce la Experiencia", href: "/es/experiencias" },
         { label: "Lee la Historia de la Bodega", href: "/es/bodega" },
+      ],
+    },
+    fa: {
+      heading: "روز شما رزرو شد.",
+      sub: "تأییدیه به ایمیل شما ارسال شد. ظرف ۲۴ ساعت با تمام اطلاعات روز با شما تماس می‌گیریم.",
+      addToCalendar: "افزودن به تقویم",
+      share: "اشتراک‌گذاری",
+      exploreLinks: [
+        { label: "کشف تجربه", href: "/fa/تجربه‌ها" },
+        { label: "داستان شراب‌سازی را بخوانید", href: "/fa/شراب‌سازی" },
       ],
     },
   },
@@ -133,6 +170,21 @@ export const bookingContent = {
         location: "Barcelona",
         year: 2026,
         services: "Restaurante, Spa y Tratamientos de Bienestar",
+      },
+    ],
+    fa: [
+      {
+        quote: "خود فرایند رزرو متفاوت بود — مثل نوشتن به یک انسان، نه پر کردن فرم. آنچه دربارهٔ نیاز غذایی‌ام گفته بودم را به یاد داشتند. همین جزئیات همه‌چیز را گفت.",
+        author: "س.ل.",
+        location: "نیویورک",
+        year: 2025,
+      },
+      {
+        quote: "از خرج کردن این مبلغ برای یک روز می‌ترسیدم. یادداشتی که پیش از رسیدن فرستادند کاملاً آن حس را برد. وقتی رسیدم، از قبل به آن‌ها اعتماد داشتم.",
+        author: "مکس س.",
+        location: "بارسلونا",
+        year: 2026,
+        services: "رستوران، اسپا و درمان‌های سلامت",
       },
     ],
   },

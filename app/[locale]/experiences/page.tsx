@@ -5,21 +5,24 @@ import BookingBanner from '@/components/sections/BookingBanner';
 import { experiencesContent } from '@/src/pages/experiences.content';
 import { homeContent } from '@/src/pages/home.content';
 import { siteImages } from '@/src/lib/images';
+import { t } from '@/lib/utils';
 import type { Locale } from '@/types';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: Locale } }): Promise<Metadata> {
   const titles: Record<Locale, string> = {
     en: 'The Sunset Harmony Package | Full-Day Peaceful Experience in Málaga',
     es: 'El Paquete Sunset Harmony | Experiencia de Paz de Día Completo en Málaga',
+    fa: 'پکیج هماهنگی غروب | تجربهٔ آرام یک روز کامل در مالاگا',
   };
   const descs: Record<Locale, string> = {
     en: 'Yoga at dawn, Sommelier wine tasting, and a chef\'s table lunch overlooking the Málaga bay. From €395.',
     es: 'Yoga al amanecer, cata de vino con sommelier y almuerzo de chef con vistas a la bahía de Málaga. Desde €395.',
+    fa: 'یوگا در سپیده‌دم، چشایی شراب با سوملیه و ناهار سرآشپز با چشم‌انداز خلیج مالاگا. از ۳۹۵ یورو.',
   };
   return {
     title: titles[locale],
     description: descs[locale],
-    alternates: { languages: { en: '/en/experiences', es: '/es/experiencias' } },
+    alternates: { languages: { en: '/en/experiences', es: '/es/experiencias', fa: '/fa/تجربه‌ها' } },
   };
 }
 
@@ -57,7 +60,7 @@ export default function ExperiencesPage({ params: { locale } }: { params: { loca
       <section className="section-padding bg-soul">
         <div className="container-site">
           <p className="section-label mb-12 text-center">
-            {locale === 'en' ? 'Your Day' : 'Tu Día'}
+            {t(locale, { en: 'Your Day', es: 'Tu Día', fa: 'روز شما' })}
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-gold/20">
             {timeline.map((item, i) => (
@@ -75,7 +78,7 @@ export default function ExperiencesPage({ params: { locale } }: { params: { loca
         <div className="container-site grid lg:grid-cols-2 gap-16 items-start">
           <div>
             <p className="section-label mb-6">
-              {locale === 'en' ? 'What Is Included' : 'Qué Incluye'}
+              {t(locale, { en: 'What Is Included', es: 'Qué Incluye', fa: 'چه چیزی شامل می‌شود' })}
             </p>
             <ul className="space-y-4">
               {included.map((item, i) => (
@@ -92,10 +95,10 @@ export default function ExperiencesPage({ params: { locale } }: { params: { loca
             <p className="section-label mb-4">{pricing.label}</p>
             <p className="font-display text-4xl text-linen font-light mb-2">{pricing.price}</p>
             <p className="font-body text-caption text-sage mb-10">{pricing.note}</p>
-            <a href={`/${locale === 'en' ? 'en' : 'es'}/book`} className="btn btn-primary w-full justify-center mb-4">
+            <a href={t(locale, { en: '/en/book', es: '/es/reservar', fa: '/fa/رزرو' })} className="btn btn-primary w-full justify-center mb-4">
               {pricing.cta}
             </a>
-            <a href={`/${locale === 'en' ? 'en' : 'es'}/book?type=private`} className="btn btn-ghost w-full justify-center">
+            <a href={`${t(locale, { en: '/en/book', es: '/es/reservar', fa: '/fa/رزرو' })}?type=private`} className="btn btn-ghost w-full justify-center">
               {pricing.ctaSecondary}
             </a>
           </div>

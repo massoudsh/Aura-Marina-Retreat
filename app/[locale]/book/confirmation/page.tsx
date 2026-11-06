@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { bookingContent } from '@/src/pages/booking.content';
+import { t } from '@/lib/utils';
 import type { Locale } from '@/types';
 
 export default function ConfirmationPage({ params: { locale } }: { params: { locale: Locale } }) {
@@ -9,7 +10,7 @@ export default function ConfirmationPage({ params: { locale } }: { params: { loc
     <div className="min-h-screen bg-soul flex items-center justify-center px-6">
       <div className="max-w-lg text-center py-32">
         <div className="w-16 h-px bg-gold mx-auto mb-12" />
-        <p className="section-label mb-6">{locale === 'en' ? 'Confirmed' : 'Confirmado'}</p>
+        <p className="section-label mb-6">{t(locale, { en: 'Confirmed', es: 'Confirmado', fa: 'تأیید شد' })}</p>
         <h1 className="font-display text-display-xl text-linen font-light mb-6 max-w-none">{conf.heading}</h1>
         <p className="font-body text-body-lg text-linen/60 mb-12">{conf.sub}</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

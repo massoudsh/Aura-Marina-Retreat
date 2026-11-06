@@ -18,6 +18,11 @@ export const aboutContent = {
       h1: "Nacida de una Sola Tarde",
       sub: "Dos personas. Una terraza. El Mediterráneo. Y la convicción compartida de que Málaga merecía algo que nadie había construido todavía.",
     },
+    fa: {
+      label: "داستان ما",
+      h1: "زادهٔ یک بعدازظهر",
+      sub: "دو نفر. یک تراس. مدیترانه. و این باور مشترک که مالاگا سزاوار چیزی بود که هنوز کسی نساخته بود.",
+    },
   },
 
   // ─── ORIGIN NARRATIVE ────────────────────────────────────────────────────────
@@ -36,6 +41,13 @@ export const aboutContent = {
       "No un tour. No una cata. No otro retiro de bienestar que promete transformación a través de un programa rebautizado.",
       "Algo más raro: un día en que cada elemento — el vino, el movimiento, la comida, el silencio — está en conversación tan precisa entre sí, que el huésped no se va sintiéndose entretenido. Se va sintiéndose reconocido.",
     ],
+    fa: [
+      "مثل همیشه بهترین ایده‌ها آغاز شد — نه در اتاق جلسه، بلکه با یک جام شراب روی تراس، در حالی که خورشید در مدیترانه حل می‌شد.",
+      "دو نفر. وسواس مشترک به اینکه تجربه‌های خاص — شرابی که دقیقاً چشم‌انداز خود را بازتاب می‌دهد، تمرین یوگایی که سرانجام ذهن را آرام می‌کند، غذایی چنان ساده که به معنویت نزدیک می‌شود — می‌توانند نگاه شما به بقیهٔ زندگی را تغییر دهند.",
+      "هیون فلو طراحی نشد. شناخته شد. این درک که مالاگا — یکی از کم‌ارزش‌شمرده‌شده‌ترین مقاصد اروپا، شهری با میراث شراب فوق‌العاده، معماری کهن اندلسی و یکی از سخاوتمندترین سواحل جهان — سزاوار تجربه‌ای در خور آنچه واقعاً هست بود.",
+      "نه یک تور. نه یک چشایی. نه یک اقامتگاه سلامت دیگر که دگرگونی را از طریق برنامه‌ای با نام تازه وعده می‌دهد.",
+      "چیزی نادرتر: روزی که در آن هر عنصر — شراب، حرکت، غذا، سکوت — چنان دقیق با یکدیگر گفتگو می‌کنند که مهمان با حس سرگرم شدن نمی‌رود. با حس شناخته شدن می‌رود.",
+    ],
   },
 
   // ─── PHILOSOPHY ──────────────────────────────────────────────────────────────
@@ -49,6 +61,11 @@ export const aboutContent = {
       label: "La Filosofía",
       headline: "Creemos que la paz no se trata de acumulación.",
       body: "El viajero contemporáneo ya se ha alojado en hoteles hermosos. Ya ha comido en restaurantes con estrellas Michelin. No busca más. Busca profundidad.\n\nEn Heaven Flow, la profundidad es nuestra disciplina. Mantenemos los grupos íntimos — nunca más de diez huéspedes — porque la intimidad no es una limitación, es el punto central. Obtenemos cada ingrediente localmente no porque esté de moda, sino porque el pescador que ha trabajado la costa malagueña durante cuarenta años sabe cosas del mar que ninguna cadena de suministro sabrá jamás.\n\nNo nos interesa la escala. Nos interesa la verdad.",
+    },
+    fa: {
+      label: "فلسفه",
+      headline: "باور داریم آرامش دربارهٔ افزودن نیست.",
+      body: "مسافر امروزی پیش‌تر در هتل‌های زیبا اقامت کرده. پیش‌تر در رستوران‌های ستاره‌دار میشلن غذا خورده. دنبال بیشتر نیست. دنبال عمق است.\n\nدر هیون فلو، عمق نظم ماست. گروه‌ها را صمیمی نگه می‌داریم — هرگز بیش از ده مهمان — چون صمیمیت محدودیت نیست، تمام هدف است. هر ماده را محلی تأمین می‌کنیم نه چون مد است، بلکه چون ماهیگیری که چهل سال در ساحل مالاگا کار کرده چیزهایی از دریا می‌داند که هیچ زنجیرهٔ تأمینی نخواهد دانست.\n\nبه مقیاس علاقه نداریم. به حقیقت علاقه داریم.",
     },
   },
 
@@ -102,6 +119,30 @@ export const aboutContent = {
         },
       ],
     },
+    fa: {
+      label: "آدم‌ها",
+      intro: "هیون فلو همکاری سه متخصص است که هر یک سال‌ها صرف متخصص شدن واقعی در حوزهٔ خود کرده‌اند — و باور دارند این حوزه‌ها به هم تعلق دارند.",
+      members: [
+        {
+          role: "سوملیه",
+          credential: "دارای گواهی WSET سطح ۳",
+          bio: "استادی دارای گواهی که دانشش از شراب‌سازی اندلسی چند نسل عمق دارد. سال‌ها با شراب‌سازی شریک ما همکاری کرده — نه به‌عنوان بازدیدکننده، بلکه به‌عنوان شاگرد تبار آن‌ها.",
+          quote: "شراب نماد منزلت نیست. یک زبان است.",
+        },
+        {
+          role: "مربی یوگا",
+          credential: "بیش از ۱۵ سال تمرین دارای گواهی",
+          bio: "تمرین‌کننده‌ای با بیش از پانزده سال تجربهٔ آموزش که جلساتش برای اجرا طراحی نشده، برای رسیدن. در هند، پرتغال و اندلس آموخته و تمرینش بازتاب هر چشم‌اندازی است که از آن گذشته.",
+          quote: "تمرین دربارهٔ وضعیت نیست. دربارهٔ آن چیزی است که وضعیت ممکن می‌کند.",
+        },
+        {
+          role: "سرآشپز",
+          credential: "فلسفهٔ تأمین محلی",
+          bio: "سرآشپزی که تمام فلسفهٔ آشپزی‌اش در یک جمله خلاصه می‌شود: دریا دستور غذاست. تنها از ماهیگیرانی تأمین می‌کند که نامشان را می‌داند و مزارعی که شخصاً دیده است.",
+          quote: "من منو نمی‌نویسم. دریا می‌نویسد.",
+        },
+      ],
+    },
   },
 
   // ─── VALUES (3 short statements) ────────────────────────────────────────────
@@ -115,6 +156,11 @@ export const aboutContent = {
       { label: "Intimidad sobre escala", body: "Nunca más de diez huéspedes. Siempre." },
       { label: "Fidelidad sobre moda", body: "Abastecimiento local no como tendencia, sino como compromiso con la verdad." },
       { label: "Profundidad sobre amplitud", body: "Un día extraordinario, hecho con precisión completa." },
+    ],
+    fa: [
+      { label: "صمیمیت بر مقیاس", body: "هرگز بیش از ده مهمان. همیشه." },
+      { label: "وفاداری بر مد", body: "تأمین محلی نه به‌عنوان روند، بلکه به‌عنوان تعهد به حقیقت." },
+      { label: "عمق بر گستره", body: "یک روز فوق‌العاده، با دقت کامل." },
     ],
   },
 
@@ -133,6 +179,13 @@ export const aboutContent = {
       ctaSecondary: "Conoce la Experiencia",
       ctaHref: "/es/reservar",
       ctaSecondaryHref: "/es/experiencias",
+    },
+    fa: {
+      quote: "به‌عنوان مهمان بیایید. به‌عنوان کسی که واقعاً رسیده است بروید.",
+      cta: "رزرو روز من",
+      ctaSecondary: "کشف تجربه",
+      ctaHref: "/fa/رزرو",
+      ctaSecondaryHref: "/fa/تجربه‌ها",
     },
   },
 

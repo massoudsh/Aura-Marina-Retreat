@@ -21,6 +21,12 @@ export const homeContent = {
       cta: "Comienza Tu Viaje",
       ctaHref: "/es/reservar",
     },
+    fa: {
+      h1: "این یک تور نیست. یک دگرگونی است.",
+      h2: "هیون فلو یک روز پناهگاهی سنجیده در قلب مالاگا است — برای کسانی که حضور، زیبایی و طبیعت را می‌جویند و کاملاً در همین لحظه هستند.",
+      cta: "سفر خود را آغاز کنید",
+      ctaHref: "/fa/رزرو",
+    },
   },
 
   // ─── VALUE PROPOSITIONS (3 PILLARS) ─────────────────────────────────────────
@@ -60,6 +66,23 @@ export const homeContent = {
         body: "La paz aquí no es mármol ni lámparas de araña. Es el peso de una copa fría de Moscatel perfectamente servida en una tarde cálida. Es el silencio entre las posturas de yoga cuando te das cuenta de que no has pensado en tu bandeja de entrada durante dos horas. Es un plato de dorada a la parrilla, capturada esa mañana, aderezada únicamente con limón y sal marina, colocada ante ti mientras el sol desciende sobre el puerto. Esta es la paz de la inmersión sensorial total — curada con tanta precisión que parece completamente natural.",
       },
     ],
+    fa: [
+      {
+        id: "history",
+        label: "تاریخ و اصالت",
+        body: "اندلس بیش از سه هزار سال است که داستان‌ها را می‌پروراند. خاک زیر پای شما بازرگانان فنیقی، فیلسوفان اندلسی و نسل‌هایی از خانواده‌هایی را به یاد دارد که سحرگاه با دست انگور می‌فشردند. وقتی با شرکای شراب‌سازی ما — استادان تبار خود — می‌نشینید، در یک چشایی شرکت نمی‌کنید. به سنتی زنده وارد می‌شوید که هیچ راهنمای گردشگری نمی‌تواند بازآفرینی کند. این اصالتی است که ساختنی نیست.",
+      },
+      {
+        id: "wellness",
+        label: "سلامت و بازیابی",
+        body: "آرامش واقعی نبودِ حرکت نیست — کشف ریتم خودتان است. جلسات یوگای دارای گواهی ما برای اجرا طراحی نشده‌اند، برای رسیدن. رسیدن به بدن، به نفس، به صبح طلایی اسپانیا. چه دهه‌ها تمرین کرده باشید و چه هرگز تشک نگشوده باشید، در فضایی از پذیرش کامل نگه داشته می‌شوید. سبک‌تر از آنچه آمدید می‌روید. این وعدهٔ ماست.",
+      },
+      {
+        id: "sensory",
+        label: "تجربهٔ حسی و آرامش",
+        body: "آرامش اینجا سنگ مرمر و لوستر نیست. وزن یک جام خنک موسکاتل است که در عصری گرم بی‌نقص ریخته شده. سکوت میان وضعیت‌های یوگا است وقتی می‌فهمید دو ساعت است به صندوق ایمیل خود فکر نکرده‌اید. بشقابی ماهی دورادای گریل‌شده است که همان صبح صید شده و تنها با لیمو و نمک دریا چاشنی خورده، در حالی که خورشید بر بندر فرود می‌آید. این آرامش غوطه‌وری کامل حسی است — چنان دقیق سنجیده که کاملاً طبیعی به نظر می‌رسد.",
+      },
+    ],
   },
 
   // ─── PACKAGE TEASER (Homepage card) ─────────────────────────────────────────
@@ -80,6 +103,14 @@ export const homeContent = {
       cta: "Explora la Experiencia",
       ctaHref: "/es/experiencias/sunset-harmony",
     },
+    fa: {
+      label: "تجربهٔ شاخص",
+      title: "پکیج هماهنگی غروب",
+      description: "یک قوس تمام‌روز از یوگا، شراب و آشپزی ساحلی. مالاگا، از نخستین نور تا ساعت طلایی.",
+      priceFrom: "از ۳۹۵ یورو برای هر نفر",
+      cta: "کشف تجربه",
+      ctaHref: "/fa/تجربه‌ها/sunset-harmony",
+    },
   },
 
   // ─── BOOKING CTA BANNER ──────────────────────────────────────────────────────
@@ -97,6 +128,13 @@ export const homeContent = {
       cta: "Reserva Mi Día Santuario",
       ctaHref: "/es/reservar",
       note: "Respuesta personal en 24 horas.",
+    },
+    fa: {
+      headline: "ظرفیت آگاهانه محدود است.",
+      sub: "ده مهمان. یک روز. مالاگا.",
+      cta: "رزرو روز آرامش من",
+      ctaHref: "/fa/رزرو",
+      note: "پاسخ شخصی ظرف ۲۴ ساعت.",
     },
   },
 

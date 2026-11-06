@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { siteImages } from '@/src/lib/images';
+import { t } from '@/lib/utils';
 import type { Locale } from '@/types';
 
 interface GalleryProps {
@@ -12,8 +13,8 @@ interface GalleryProps {
 export default function Gallery({ locale }: GalleryProps) {
   const [selected, setSelected] = useState<{ src: string; alt: string } | null>(null);
 
-  const label = locale === 'en' ? 'The Experience' : 'La Experiencia';
-  const hint  = locale === 'en' ? 'Tap any image to enlarge' : 'Toca cualquier imagen para ampliar';
+  const label = t(locale, { en: 'The Experience', es: 'La Experiencia', fa: 'تجربه' });
+  const hint  = t(locale, { en: 'Tap any image to enlarge', es: 'Toca cualquier imagen para ampliar', fa: 'برای بزرگ‌نمایی روی تصویر بزنید' });
 
   return (
     <section className="section-padding bg-soul">
@@ -21,7 +22,7 @@ export default function Gallery({ locale }: GalleryProps) {
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-10">
           <div>
             <p className="section-label mb-3">{label}</p>
-            <h2 className="font-display text-3xl lg:text-4xl text-linen font-light max-w-none">{locale === 'en' ? 'A day in still frames.' : 'Un día en imágenes.'}</h2>
+            <h2 className="font-display text-3xl lg:text-4xl text-linen font-light max-w-none">{t(locale, { en: 'A day in still frames.', es: 'Un día en imágenes.', fa: 'یک روز در قاب‌های ساکن.' })}</h2>
           </div>
           <p className="font-body text-caption text-sage italic">{hint}</p>
         </div>

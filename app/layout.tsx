@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Cormorant_Garamond, DM_Sans } from 'next/font/google';
+import { Cormorant_Garamond, DM_Sans, Vazirmatn } from 'next/font/google';
 import '../src/styles/tokens.css';
 import './globals.css';
 
@@ -15,6 +15,13 @@ const dmSans = DM_Sans({
   subsets: ['latin'],
   weight: ['400', '500'],
   variable: '--font-body',
+  display: 'swap',
+});
+
+const vazirmatn = Vazirmatn({
+  subsets: ['arabic'],
+  weight: ['300', '400', '500'],
+  variable: '--font-fa',
   display: 'swap',
 });
 
@@ -41,7 +48,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
-      <body className={`${cormorant.variable} ${dmSans.variable} bg-linen text-soul antialiased`}>
+      <body className={`${cormorant.variable} ${dmSans.variable} ${vazirmatn.variable} bg-linen text-soul antialiased`}>
         {children}
       </body>
     </html>

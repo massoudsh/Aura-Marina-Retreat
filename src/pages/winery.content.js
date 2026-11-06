@@ -22,6 +22,13 @@ export const wineryContent = {
       cta: "Reserva Mi Lugar en el Taller",
       ctaHref: "/es/reservar?tipo=taller",
     },
+    fa: {
+      label: "شراب‌سازی",
+      h1: "زبانی را که زمین سخن می‌گوید بیاموزید",
+      sub: "کارگاهی صمیمی با استادان شراب‌سازی اندلس — در همان شراب‌سازی که شراب در آن زاده می‌شود.",
+      cta: "رزرو جای من در کارگاه",
+      ctaHref: "/fa/رزرو?type=workshop",
+    },
   },
 
   // ─── INTRO ───────────────────────────────────────────────────────────────────
@@ -33,6 +40,10 @@ export const wineryContent = {
     es: {
       label: "Dentro de la Bodega",
       body: "Hay una calidad particular en el silencio de una bodega antigua. Fresco, quieto, cargado con el tenue perfume del roble y la fermentación. Es el silencio de la paciencia — de un vino que ha estado esperando, en silencio, el momento justo para ser comprendido.\n\nAquí es donde comienza tu educación.\n\nNuestra Bodega socia no es una bodega que recibe turistas. Es una finca en plena producción, cuyos vinos se distribuyen a una pequeña red cuidadosamente seleccionada de sommeliers y coleccionistas privados en toda Europa. Una invitación a aprender aquí es genuinamente escasa — y la extendemos a los huéspedes de Heaven Flow como un acto de confianza que ha llevado años construir.",
+    },
+    fa: {
+      label: "درون شراب‌سازی",
+      body: "سکوتی خاص در یک زیرزمین شراب کهن هست. خنک، ساکن، سنگین با عطر رقیق بلوط و تخمیر. سکوت صبر است — شرابی که آرام منتظر لحظهٔ درست برای فهمیده شدن بوده است.\n\nآموزش شما از اینجا آغاز می‌شود.\n\nشراب‌سازی شریک ما جایی نیست که گردشگر بپذیرد. ملکی فعال است که شراب‌هایش به شبکه‌ای کوچک و سنجیده از سوملیه‌ها و مجموعه‌داران خصوصی در سراسر اروپا توزیع می‌شود. دعوت به آموختن در اینجا واقعاً نادر است — و آن را به مهمانان هیون فلو به‌عنوان عملی از اعتماد که سال‌ها ساخته شده، تقدیم می‌کنیم.",
     },
   },
 
@@ -80,6 +91,27 @@ export const wineryContent = {
         },
       ],
     },
+    fa: {
+      label: "آنچه خواهید آموخت",
+      preamble: "کارگاه در سه حرکت ساختار یافته — که آگاهانه قوس یک تمرین یوگا را بازتاب می‌دهد: زمین‌گیری، گشودن، یکپارچگی.",
+      items: [
+        {
+          number: "I",
+          title: "زمین‌گیری — خاک",
+          body: "در خود تاکستان آغاز کنید. راهنمای شما را در شرایط زمین‌شناختی و اقلیمی خاصی می‌گرداند که منطقهٔ شراب مالاگا را از هر جای دیگر اسپانیا متمایز می‌کند — ارتفاع، خاک‌های شیست، نزدیکی دریا، شدت خورشید مالاگا. این نظریه نیست. شما در آن ایستاده‌اید.",
+        },
+        {
+          number: "II",
+          title: "گشودن — چشایی",
+          body: "به زیرزمین بازگردید برای چشایی ساختاریافتهٔ چهار شراب — از سفید جوان و معدنی تا شراب قرمز کهنهٔ شاخص ملک. سوملیهٔ شما واژگان دقیق چشایی را می‌آموزد که برداشت‌های مبهم را با مشاهدهٔ واقعی جایگزین می‌کند. در پایان این حرکت می‌توانید بیان کنید چه می‌چشید — و چرا اهمیت دارد.",
+        },
+        {
+          number: "III",
+          title: "یکپارچگی — جفت‌سازی",
+          body: "کارگاه با جلسهٔ جفت‌سازی نشسته بسته می‌شود: هر شراب با یک مادهٔ محلی سنجیده جفت می‌شود. تکه‌ای مانچگوی کهنه. برشی از ژامبون ایبری خانگی. مربعی شکلات تلخ از تولیدکنندهٔ تک‌منشأ مالاگا. جلسهٔ جفت‌سازی به‌اندازهٔ درس گاسترونومی، مراقبه‌ای در تضاد و هماهنگی است.",
+        },
+      ],
+    },
   },
 
   // ─── PROGRAMME DETAILS ───────────────────────────────────────────────────────
@@ -120,6 +152,24 @@ export const wineryContent = {
       cta: "Reserva Mi Lugar en el Taller",
       ctaSecondary: "Consultar Grupos Privados",
     },
+    fa: {
+      label: "جزئیات برنامه",
+      items: [
+        { key: "مدت", value: "۳.۵ ساعت" },
+        { key: "مکان", value: "ملک شراب‌سازی شریک ما — حمل‌ونقل از مرکز مالاگا شامل می‌شود" },
+        { key: "تعداد نفرات", value: "حداکثر ۸ شرکت‌کننده — جلسات خصوصی موجود است" },
+        { key: "زبان", value: "انگلیسی، اسپانیایی یا دوزبانه" },
+        { key: "شامل", value: "پیاده‌روی تاکستان، دسترسی به زیرزمین، چشایی ساختاریافتهٔ ۴ شراب، جلسهٔ جفت‌سازی، بطری همراه از شراب‌سازی" },
+        { key: "قابل رزرو به‌صورت", value: "رزرو مستقل، یا درون پکیج هماهنگی غروب" },
+      ],
+      pricing: {
+        label: "سرمایه‌گذاری",
+        price: "از ۱۸۵ یورو برای هر نفر",
+        privateNote: "جلسات گروه خصوصی از ۱۲۰۰ یورو (تا ۸ مهمان)",
+      },
+      cta: "رزرو جای من در کارگاه",
+      ctaSecondary: "درخواست گروه خصوصی",
+    },
   },
 
   // ─── TESTIMONIALS ─────────────────────────────────────────────────────────────
@@ -154,6 +204,22 @@ export const wineryContent = {
         year: 2026,
         services: "Taller de Vino + Restaurante",
         rating: "Satisfecho",
+      },
+    ],
+    fa: [
+      {
+        quote: "در بوردو، توسکانی و درهٔ دورو در کات‌های شراب شرکت کرده‌ام. آنچه در آن زیرزمین در مالاگا رخ داد متفاوت بود. کمتر شبیه درس بود و بیشتر شبیه اعتراف.",
+        author: "م.ت.",
+        location: "لندن",
+        year: 2025,
+      },
+      {
+        quote: "انتظار یک بعدازظهر دلپذیر را داشتم. با رابطه‌ای بنیادین متفاوت با شراب رفتم — و با مالاگا. دانش سوملیه چنان عمیق است که تقریباً ناراحت‌کننده است.",
+        author: "مکس س.",
+        location: "بارسلونا",
+        year: 2026,
+        services: "کارگاه شراب + رستوران",
+        rating: "راضی",
       },
     ],
   },

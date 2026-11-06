@@ -19,7 +19,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     description: content.h2,
     alternates: {
       canonical: `/${locale}`,
-      languages: { en: '/en', es: '/es' },
+      languages: { en: '/en', es: '/es', fa: '/fa' },
     },
   };
 }

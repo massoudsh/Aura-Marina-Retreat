@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ui } from '@/src/components/ui.copy.js';
+import { t } from '@/lib/utils';
 import type { Locale } from '@/types';
 
 interface FAQSectionProps {
@@ -11,7 +12,7 @@ interface FAQSectionProps {
 export default function FAQSection({ locale }: FAQSectionProps) {
   const [open, setOpen] = useState<number | null>(null);
   const faqs = ui.faq[locale];
-  const label = locale === 'en' ? 'Frequently Asked' : 'Preguntas Frecuentes';
+  const label = t(locale, { en: 'Frequently Asked', es: 'Preguntas Frecuentes', fa: 'پرسش‌های رایج' });
 
   return (
     <section className="section-padding bg-linen">

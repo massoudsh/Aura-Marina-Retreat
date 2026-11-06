@@ -10,8 +10,9 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   const titles: Record<Locale, string> = {
     en: 'The Kitchen | Locally Sourced Coastal Cuisine in Málaga',
     es: 'La Cocina | Cocina Costera de Producto Local en Málaga',
+    fa: 'آشپزخانه | آشپزی ساحلی با محصولات محلی در مالاگا',
   };
-  return { title: titles[locale], alternates: { languages: { en: '/en/dining', es: '/es/cocina' } } };
+  return { title: titles[locale], alternates: { languages: { en: '/en/dining', es: '/es/cocina', fa: '/fa/غذا' } } };
 }
 
 export default function DiningPage({ params: { locale } }: { params: { locale: Locale } }) {

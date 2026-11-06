@@ -6,17 +6,25 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import { ui } from '@/src/components/ui.copy';
-import type { Locale } from '@/types';
+import { LOCALES, type Locale } from '@/types';
+
+const ROUTES: Record<string, Record<Locale, string>> = {
+  experiences: { en: '/en/experiences', es: '/es/experiencias', fa: '/fa/تجربه‌ها' },
+  journey:     { en: '/en/journey',     es: '/es/viaje',        fa: '/fa/سفر' },
+  dining:      { en: '/en/dining',      es: '/es/cocina',       fa: '/fa/غذا' },
+  winery:      { en: '/en/winery',      es: '/es/bodega',       fa: '/fa/شراب‌سازی' },
+  about:       { en: '/en/about',       es: '/es/nosotros',     fa: '/fa/درباره-ما' },
+  book:        { en: '/en/book',        es: '/es/reservar',     fa: '/fa/رزرو' },
+};
 
 const NAV_LINKS = (locale: Locale) => {
   const n = ui.nav[locale];
-  const isEs = locale === 'es';
   return [
-    { label: n.experience, href: isEs ? '/es/experiencias' : '/en/experiences' },
-    { label: n.journey,    href: isEs ? '/es/viaje'        : '/en/journey' },
-    { label: n.dining,     href: isEs ? '/es/cocina'       : '/en/dining' },
-    { label: n.winery,     href: isEs ? '/es/bodega'       : '/en/winery' },
-    { label: n.about,      href: isEs ? '/es/nosotros'     : '/en/about' },
+    { label: n.experience, href: ROUTES.experiences[locale] },
+    { label: n.journey,    href: ROUTES.journey[locale] },
+    { label: n.dining,     href: ROUTES.dining[locale] },
+    { label: n.winery,     href: ROUTES.winery[locale] },
+    { label: n.about,      href: ROUTES.about[locale] },
   ];
 };
 
@@ -32,8 +40,7 @@ export default function Navigation({ locale }: { locale: Locale }) {
     return () => window.removeEventListener('scroll', handler);
   }, []);
 
-  const otherLocale = locale === 'en' ? 'es' : 'en';
-  const bookHref = `/${locale}/book`;
+  const bookHref = ROUTES.book[locale];
 
   return (
     <>
@@ -69,12 +76,7 @@ export default function Navigation({ locale }: { locale: Locale }) {
 
           {/* Right: Lang toggle + CTA */}
           <div className="hidden lg:flex items-center gap-6">
-            <Link
-              href={`/${otherLocale}`}
-              className="font-body text-caption text-sage hover:text-soul transition-colors duration-150 uppercase tracking-widest"
-            >
-              {otherLocale.toUpperCase()}
-            </Link>
+            <LocaleSwitcher locale={locale} />
             <Link href={bookHref} className="btn btn-primary py-2.5 px-6 text-xs">
               {nav.book}
             </Link>
@@ -127,18 +129,13 @@ export default function Navigation({ locale }: { locale: Locale }) {
             <Link href={bookHref} onClick={() => setMenuOpen(false)} className="btn btn-primary flex-1 justify-center">
               {nav.book}
             </Link>
-            <Link
-              href={`/${otherLocale}`}
-              className="font-body text-caption text-sage uppercase tracking-widest"
-            >
-              {otherLocale.toUpperCase()}
-            </Link>
+            <LocaleSwitcher locale={locale} />
           </div>
         </div>
       )}
 
       {/* Mobile sticky book bar (hidden on /book) */}
-      {!pathname.includes('/book') && (
+      {!pathname.includes('/book') && !pathname.includes('/رزرو') && (
         <div className="lg:hidden fixed bottom-0 inset-x-0 z-sticky bg-linen border-t border-gold/20 p-4">
           <Link href={bookHref} className="btn btn-primary w-full justify-center">
             {nav.book}
@@ -146,5 +143,26 @@ export default function Navigation({ locale }: { locale: Locale }) {
         </div>
       )}
     </>
+  );
+}
+
+function LocaleSwitcher({ locale }: { locale: Locale }) {
+  return (
+    <div className="flex items-center gap-3">
+      {LOCALES.map((code) => (
+        <Link
+          key={code}
+          href={`/${code}`}
+          hrefLang={code}
+          aria-current={code === locale ? 'true' : undefined}
+          className={cn(
+            'font-body text-caption uppercase tracking-widest transition-colors duration-150',
+            code === locale ? 'text-gold' : 'text-sage hover:text-soul'
+          )}
+        >
+          {code.toUpperCase()}
+        </Link>
+      ))}
+    </div>
   );
 }

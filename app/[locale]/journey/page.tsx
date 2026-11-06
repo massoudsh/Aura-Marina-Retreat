@@ -3,16 +3,18 @@ import Image from 'next/image';
 import { FadeIn } from '@/components/ui/FadeIn';
 import { siteImages } from '@/src/lib/images';
 import { journeyContent } from '@/src/pages/journey.content';
+import { t } from '@/lib/utils';
 import type { Locale } from '@/types';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: Locale } }): Promise<Metadata> {
   const meta: Record<Locale, string> = {
     en: 'The Journey | What Your Heaven Flow Day Feels Like',
     es: 'El Viaje | Cómo Se Siente Tu Día en Heaven Flow',
+    fa: 'سفر | روز هیون فلو شما چه حسی دارد',
   };
   return {
     title: meta[locale],
-    alternates: { languages: { en: '/en/journey', es: '/es/viaje' } },
+    alternates: { languages: { en: '/en/journey', es: '/es/viaje', fa: '/fa/سفر' } },
   };
 }
 
@@ -68,7 +70,7 @@ export default function JourneyPage({ params: { locale } }: { params: { locale: 
         <div className="relative pb-8 container-site flex items-center gap-3 opacity-50">
           <div className="w-px h-10 bg-gold" />
           <p className="font-body text-xs text-gold uppercase tracking-[0.2em]">
-            {locale === 'en' ? 'Scroll to feel the day' : 'Desliza para sentir el día'}
+            {t(locale, { en: 'Scroll to feel the day', es: 'Desliza para sentir el día', fa: 'برای حس کردن روز اسکرول کنید' })}
           </p>
         </div>
       </section>
@@ -153,9 +155,11 @@ export default function JourneyPage({ params: { locale } }: { params: { locale: 
         <div className="absolute inset-0 flex items-center justify-center">
           <FadeIn y={16}>
             <p className="font-display text-[2rem] sm:text-[2.8rem] lg:text-[4rem] text-linen font-light italic text-center max-w-[20ch] text-balance leading-snug px-6">
-              {locale === 'en'
-                ? 'The light here does something to people.'
-                : 'La luz de aquí hace algo a las personas.'}
+              {t(locale, {
+                en: 'The light here does something to people.',
+                es: 'La luz de aquí hace algo a las personas.',
+                fa: 'نور اینجا کاری با آدم‌ها می‌کند.',
+              })}
             </p>
           </FadeIn>
         </div>
@@ -168,7 +172,7 @@ export default function JourneyPage({ params: { locale } }: { params: { locale: 
 
             <FadeIn y={24}>
               <div>
-                <p className="section-label mb-8">{locale === 'en' ? 'What you carry home' : 'Lo que te llevas'}</p>
+                <p className="section-label mb-8">{t(locale, { en: 'What you carry home', es: 'Lo que te llevas', fa: 'آنچه با خود به خانه می‌برید' })}</p>
                 <h2 className="font-display text-[2.2rem] lg:text-[3.2rem] text-soul font-light max-w-none leading-[1.25] mb-0">
                   {assurance.title}
                 </h2>
@@ -197,12 +201,14 @@ export default function JourneyPage({ params: { locale } }: { params: { locale: 
         <div className="container-site max-w-3xl mx-auto text-center">
           <FadeIn y={20}>
             <p className="section-label mb-8">
-              {locale === 'en' ? 'Who this is for' : 'Para quién es esto'}
+              {t(locale, { en: 'Who this is for', es: 'Para quién es esto', fa: 'این برای چه کسانی است' })}
             </p>
             <p className="font-display text-[1.75rem] sm:text-[2.25rem] lg:text-[2.9rem] text-linen font-light italic leading-[1.35] text-balance max-w-none">
-              {locale === 'en'
-                ? '"This is for the couple who cares less about checking boxes and more about how a day actually feels while they are living it."'
-                : '"Esto es para la pareja que se preocupa menos por marcar casillas y más por cómo se siente un día mientras lo está viviendo."'}
+              {t(locale, {
+                en: '"This is for the couple who cares less about checking boxes and more about how a day actually feels while they are living it."',
+                es: '"Esto es para la pareja que se preocupa menos por marcar casillas y más por cómo se siente un día mientras lo está viviendo."',
+                fa: '«این برای زوجی است که کمتر به تیک زدن فهرست اهمیت می‌دهد و بیشتر به اینکه یک روز، همان‌طور که در آن زندگی می‌کند، چه حسی دارد.»',
+              })}
             </p>
           </FadeIn>
         </div>
@@ -225,7 +231,7 @@ export default function JourneyPage({ params: { locale } }: { params: { locale: 
         <div className="relative container-site max-w-3xl mx-auto">
           <FadeIn y={28}>
             <p className="section-label mb-8 text-gold">
-              {locale === 'en' ? 'Begin here' : 'Empieza aquí'}
+              {t(locale, { en: 'Begin here', es: 'Empieza aquí', fa: 'از اینجا شروع کنید' })}
             </p>
             <h2 className="font-display text-[2.4rem] sm:text-[3.2rem] lg:text-[4.5rem] text-linen font-light leading-[1.15] mb-8 max-w-none text-balance">
               {close.title}
@@ -236,10 +242,10 @@ export default function JourneyPage({ params: { locale } }: { params: { locale: 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href={close.ctaHref} className="btn btn-primary text-sm px-10 py-4">{close.cta}</a>
               <a
-                href={locale === 'en' ? '/en/experiences' : '/es/experiencias'}
+                href={t(locale, { en: '/en/experiences', es: '/es/experiencias', fa: '/fa/تجربه‌ها' })}
                 className="btn btn-ghost text-sm px-10 py-4"
               >
-                {locale === 'en' ? 'Explore Experiences' : 'Ver Experiencias'}
+                {t(locale, { en: 'Explore Experiences', es: 'Ver Experiencias', fa: 'کشف تجربه‌ها' })}
               </a>
             </div>
           </FadeIn>

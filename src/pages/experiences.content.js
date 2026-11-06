@@ -18,6 +18,11 @@ export const experiencesContent = {
       h1: "El Paquete Sunset Harmony",
       sub: "Una Experiencia Inmersiva de Día Completo — Málaga, Andalucía",
     },
+    fa: {
+      label: "تجربه",
+      h1: "پکیج هماهنگی غروب",
+      sub: "یک تجربهٔ غوطه‌ور تمام‌روز — مالاگا، اندلس",
+    },
   },
 
   // ─── NARRATIVE ───────────────────────────────────────────────────────────────
@@ -39,6 +44,15 @@ export const experiencesContent = {
       "En el punto álgido del día, una mesa larga te espera. El chef, que abastece exclusivamente de pescadores locales y granjas costeras, presenta un menú curado nacido de lo que el mar ofreció esa mañana. La comida es lenta. La conversación, fluida. El entorno — con vistas a la bahía — está diseñado para hacerte sentir completamente presente y bellamente alejado del mundo ordinario.",
       "Al suavizarse la tarde hacia la hora dorada, llega un momento final y privado: una práctica restauradora de cierre, una infusión de hierbas tradicional y la silenciosa certeza de que algo en ti se ha asentado.",
       "Esto no es una excursión. Es un día transformado.",
+    ],
+    fa: [
+      "بعضی روزها فقط می‌گذرند. این یکی با شما می‌ماند.",
+      "پکیج هماهنگی غروب پیشنهاد شاخص ماست — قوسی دوازده‌ساعته و دقیق از حس، سکون و جشن، برای مسافری که می‌داند بزرگ‌ترین آرامش، زمانی است که با نیت والا گذرانده می‌شود.",
+      "روز شما با فعالیت آغاز نمی‌شود، با نفس. همچنان که نور صبح بر دیوارهای سفیدشدهٔ تراس خصوصی ما کهربایی می‌شود، راهنمای یوگای دارای گواهی شما را به تمرینی بی‌شتاب از زمین‌گیری و حضور دعوت می‌کند. بدون آینه. بدون اجرا. فقط شما، تشک و صدای دریا در چند صد متری پایین‌تر.",
+      "نزدیک ظهر، تجربه به حسی و دانشی می‌رسد. سوملیهٔ شما — استادی دارای گواهی که سال‌ها با شراب‌سازی شریک ما همکاری کرده — شما را در سه شراب فوق‌العادهٔ اندلسی می‌گرداند، هر یک فصلی از داستان شراب منطقه. فقط نمی‌نوشید؛ چشم‌انداز را با کام خود می‌خوانید.",
+      "در اوج روز، میزی بلند منتظر است. سرآشپز که تنها از ماهیگیران محلی و مزارع ساحلی تأمین می‌کند، منویی سنجیده از آنچه دریا آن صبح عرضه کرده ارائه می‌دهد. غذا آهسته است. گفتگو آسان. فضا — با چشم‌انداز خلیج — طراحی شده تا هم کاملاً حاضر و هم زیبا دور از دنیای معمولی باشید.",
+      "همچنان که بعدازظهر به ساعت طلایی نرم می‌شود، لحظه‌ای آخر و خصوصی هست: تمرین پایانی ترمیمی، دمنوش گیاهی سنتی و درک آرام از اینکه چیزی در شما آرام گرفته است.",
+      "این یک گردش یک‌روزه نیست. روزی دگرگون‌شده است.",
     ],
   },
 
@@ -70,6 +84,19 @@ export const experiencesContent = {
       "Coordinación de transporte desde el centro de Málaga (a petición)",
       "Máximo 10 huéspedes por sesión — íntimo por diseño",
     ],
+    fa: [
+      "جلسهٔ یوگای زمین‌گیری صبحگاهی (۷۵ دقیقه) با مربی دارای گواهی در تراس خصوصی ما",
+      "سه جفت‌سازی شراب سنجیده به راهنمایی سوملیهٔ مقیم ما (دارای گواهی WSET سطح ۳+)",
+      "چشایی حسی راهنمایی‌شده: بینی، کام و روایت خاک برای هر رقم",
+      "ناهار فصلی سرآشپز — مواد محلی، با تمرکز بر غذای دریایی، امکان تطبیق رژیم غذایی",
+      "ساعت آپریتیف: گوشت‌های سرد اندلسی، پنیرهای دست‌ساز و زیتون‌های منطقه",
+      "جلسهٔ یوگا/تنفس ترمیمی اواخر بعدازظهر (۴۵ دقیقه)",
+      "مراسم دمنوش گیاهی سنتی (سنجیده از گیاهان محلی)",
+      "کیت خوش‌آمد خصوصی: کیف کتان، کارت نیت روزانه دست‌نویس، آب گیاهی محلی",
+      "هدیهٔ سنجیدهٔ همراه از شراب‌سازی شریک ما",
+      "هماهنگی حمل‌ونقل از مرکز مالاگا (به درخواست)",
+      "حداکثر ۱۰ مهمان در هر جلسه — صمیمی به‌واسطهٔ طراحی",
+    ],
   },
 
   // ─── PRICING ─────────────────────────────────────────────────────────────────
@@ -87,6 +114,13 @@ export const experiencesContent = {
       note: "Tarifas para grupos privados disponibles bajo consulta.",
       cta: "Reservar Mi Lugar",
       ctaSecondary: "Consultar Grupos Privados",
+    },
+    fa: {
+      label: "سرمایه‌گذاری",
+      price: "از ۳۹۵ یورو برای هر نفر",
+      note: "نرخ گروه‌های خصوصی با درخواست موجود است.",
+      cta: "رزرو جای من",
+      ctaSecondary: "درخواست گروه خصوصی",
     },
   },
 
@@ -115,6 +149,18 @@ export const experiencesContent = {
       { time: "16:30", event: "Yoga Restaurador y Respiración (45 min)" },
       { time: "17:30", event: "Ceremonia de Tisana" },
       { time: "18:00", event: "Despedida y Obsequio para Llevar" },
+    ],
+    fa: [
+      { time: "۰۸:۰۰", event: "رسیدن و کیت خوش‌آمد" },
+      { time: "۰۸:۳۰", event: "یوگای زمین‌گیری صبحگاهی (۷۵ دقیقه)" },
+      { time: "۱۰:۱۵", event: "چشایی شراب با سوملیه — حرکت اول" },
+      { time: "۱۱:۳۰", event: "روایت شراب‌سازی و پیاده‌روی خاک" },
+      { time: "۱۳:۰۰", event: "ناهار سرآشپز — منوی غذای دریایی" },
+      { time: "۱۴:۳۰", event: "پیاده‌روی باغ و ساحل" },
+      { time: "۱۵:۳۰", event: "ساعت آپریتیف" },
+      { time: "۱۶:۳۰", event: "یوگای ترمیمی و تنفس (۴۵ دقیقه)" },
+      { time: "۱۷:۳۰", event: "مراسم دمنوش گیاهی" },
+      { time: "۱۸:۰۰", event: "خداحافظی و هدیهٔ همراه" },
     ],
   },
 
@@ -153,6 +199,24 @@ export const experiencesContent = {
           body: "Extiende tu día sobre el agua. Nuestros capitanes socios llevan a pequeños grupos por la costa de Málaga en un chárter de medio día o día completo — calas para nadar, un brindis servido por el sommelier al ancla, y vistas al atardecer que no se encuentran en tierra.",
           duration: "Medio día o día completo",
           price: "Desde €950 por chárter (hasta 8 huéspedes)",
+        },
+      ],
+    },
+    fa: {
+      label: "تجربه‌های افزودنی",
+      intro: "برای مهمانی که می‌خواهند روز خود را فراتر از برنامهٔ هماهنگی غروب ببرند، راه‌های بیشتری برای گذراندن ساعت‌ها در مالاگا داریم.",
+      items: [
+        {
+          title: "پیاده‌روی باغ و ساحل",
+          body: "پیاده‌رویی آهسته و راهنمایی‌شده در باغ گیاهی خصوصی ما و پایین تا ساحل — فاصله‌ای آرام میان حرکت‌های روز، با هر سرعتی که درست به نظر برسد.",
+          duration: "۳۰ تا ۴۵ دقیقه",
+          price: "شامل می‌شود",
+        },
+        {
+          title: "اجارهٔ قایق تفریحی خصوصی",
+          body: "روز خود را روی آب ادامه دهید. ناخدایان شریک ما گروه‌های کوچک را در نیم‌روز یا تمام‌روز در امتداد ساحل مالاگا می‌برند — خلیج‌های شنا، نان تستی که سوملیه در لنگرگاه می‌ریزد و چشم‌اندازهای غروبی که در خشکی یافت نمی‌شود.",
+          duration: "نیم‌روز یا تمام‌روز",
+          price: "از ۹۵۰ یورو برای هر اجاره (تا ۸ مهمان)",
         },
       ],
     },

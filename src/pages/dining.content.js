@@ -18,6 +18,11 @@ export const diningContent = {
       h1: "Nacida del Mar. Arraigada en la Tierra.",
       sub: "Cocina costera de producto local — donde el menú empieza en el puerto, no en la hoja de cálculo.",
     },
+    fa: {
+      label: "آشپزخانه",
+      h1: "زادهٔ دریا. ریشه در خشکی.",
+      sub: "آشپزی ساحلی با محصولات محلی — جایی که منو از بندر آغاز می‌شود، نه از صفحهٔ گسترده.",
+    },
   },
 
   // ─── ORIGIN STORY ────────────────────────────────────────────────────────────
@@ -35,6 +40,13 @@ export const diningContent = {
       "El resultado es una mesa que cambia con la marea. Hoy pueden ser espetos de sardinas — el icónico espeto malagueño asado en madera con nada más que sal marina — o un delicado ceviche de lubina local con aguacate y aceite de Arbequina prensado en frío. Mañana podría ser una dorada a la sal, asada entera, presentada en la mesa como la ceremonia que merece ser.",
       "No usamos la palabra 'fusión.' Usamos la palabra 'fidelidad' — fidelidad al ingrediente, a la temporada y a la filosofía mediterránea de que la gran comida solo necesita la confianza de permanecer simple.",
       "No estás comiendo un plato. Estás comiendo un lugar.",
+    ],
+    fa: [
+      "حکمتی خاص در دستان ماهیگیری زندگی می‌کند که چهل سال در همان تکه از ساحل کار کرده است. او منو را نمی‌خواند. آب، باد و فصل را می‌خواند — و آنچه به ساحل می‌آورد بنیاد هر چیزی است که سرو می‌کنیم.",
+      "آشپزخانهٔ ما با دستور غذا آغاز نمی‌شود. با رابطه آغاز می‌شود — با ماهیگیران ساحل مالاگا که پیش از طلوع تحویل می‌دهند، با مزارع کوچک داخلی که درختان زیتونشان از خود کشور قدیمی‌ترند، و با مادربزرگ‌های اندلسی که غریزه‌شان برای نمک، اسید و گرما هرگز به آموزش رسمی نیاز نداشته.",
+      "نتیجه میزی است که با جزر و مد تغییر می‌کند. امروز ممکن است اسپتوی ساردین باشد — ساردین سیخ‌شدهٔ نمادین مالاگا، گریل‌شده روی چوب‌های ساحلی با تنها نمک دریا — یا سِویچهٔ لطیف از باس دریایی محلی با آووکادو و روغن آربکینای سردفشرده. فردا ممکن است ماهی سیم پوسته‌نمکی باشد، کامل بریان‌شده و سر میز مانند مراسمی که سزاوار آن است ارائه شود.",
+      "ما واژهٔ «تلفیقی» را به کار نمی‌بریم. واژهٔ «وفاداری» را به کار می‌بریم — وفاداری به ماده، به فصل و به فلسفهٔ مدیترانه‌ای که غذای عالی تنها به اعتماد برای ساده ماندن نیاز دارد.",
+      "شما یک بشقاب نمی‌خورید. یک مکان می‌خورید.",
     ],
   },
 
@@ -94,6 +106,33 @@ export const diningContent = {
       ],
       dietaryKey: { SG: "Sin Gluten", SL: "Sin Lácteos", V: "Vegetariano" },
     },
+    fa: {
+      label: "میز امروز",
+      note: "منوی ما روزانه با صید و فصل تغییر می‌کند. آنچه می‌آید نگاهی است — نه تضمین.",
+      dishes: [
+        {
+          name: "اسپتوی ساردین",
+          description: "ساردین ساحل مالاگا، گریل‌شده روی سیخ‌های نی سنتی روی زغال چوب ساحلی. تنها نمک دریا.",
+          dietary: ["GF", "DF"],
+        },
+        {
+          name: "سِویچهٔ باس دریایی",
+          description: "باس دریایی محلی، روغن آربکینای سردفشرده، آووکادو، مرکبات تازه، گیاهان ساحلی.",
+          dietary: ["GF", "DF"],
+        },
+        {
+          name: "سیم پوسته‌نمکی",
+          description: "سیم کامل در پوستهٔ نمک، بریان‌شده و سر میز شکسته. لیمو، کبر، روغن زیتون.",
+          dietary: ["GF", "DF"],
+        },
+        {
+          name: "تارت بادام",
+          description: "تارت بادام مالاگا، عسل کهنه، خامهٔ پنیر بز محلی. دسری با قرن‌ها پیشینه.",
+          dietary: ["GF", "V"],
+        },
+      ],
+      dietaryKey: { GF: "بدون گلوتن", DF: "بدون لبنیات", V: "گیاهی" },
+    },
   },
 
   // ─── SOURCING MAP LABELS ──────────────────────────────────────────────────────
@@ -118,6 +157,16 @@ export const diningContent = {
         { id: "wine", label: "Vinos — nuestra Bodega socia" },
       ],
     },
+    fa: {
+      label: "از کجا می‌آید",
+      sources: [
+        { id: "fish", label: "صید روزانه — ماهیگیران بندر مالاگا" },
+        { id: "oil", label: "آربکینای سردفشرده — باغ‌های زیتون داخلی اندلس" },
+        { id: "produce", label: "سبزیجات فصلی — مزارع کوچک ساحلی" },
+        { id: "almonds", label: "بادام مالاگا — باغ‌های محلی، برداشت سپتامبر" },
+        { id: "wine", label: "شراب‌ها — ملک شراب‌سازی شریک ما" },
+      ],
+    },
   },
 
   // ─── CHEF QUOTE ───────────────────────────────────────────────────────────────
@@ -130,12 +179,17 @@ export const diningContent = {
       quote: "El mar es la receta. Yo soy simplemente el traductor.",
       attribution: "— Chef Principal, Heaven Flow",
     },
+    fa: {
+      quote: "دریا دستور غذاست. من فقط مترجمم.",
+      attribution: "— سرآشپز، هیون فلو",
+    },
   },
 
   // ─── CTA ─────────────────────────────────────────────────────────────────────
   cta: {
     en: { text: "Reserve My Seat at the Table", href: "/en/book" },
     es: { text: "Reserva Mi Lugar en la Mesa", href: "/es/reservar" },
+    fa: { text: "رزرو جای من سر میز", href: "/fa/رزرو" },
   },
 
 };

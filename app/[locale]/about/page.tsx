@@ -10,6 +10,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   const titles: Record<Locale, string> = {
     en: 'Our Story | The People Behind Heaven Flow Málaga',
     es: 'Nuestra Historia | Las Personas Detrás de Heaven Flow Málaga',
+    fa: 'داستان ما | آدم‌های پشت هیون فلو مالاگا',
   };
   return { title: titles[locale] };
 }

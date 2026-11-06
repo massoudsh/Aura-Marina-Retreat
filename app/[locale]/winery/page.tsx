@@ -8,6 +8,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   const titles: Record<Locale, string> = {
     en: 'Bodega Wine Workshop Málaga | Learn Andalusian Wine',
     es: 'Taller de Vino en Bodega Málaga | Aprende Vino Andaluz',
+    fa: 'کارگاه شراب در مالاگا | شراب اندلسی را بیاموزید',
   };
   return { title: titles[locale] };
 }

@@ -1,3 +1,4 @@
+import { t } from '@/lib/utils';
 import type { Locale } from '@/types';
 
 interface Pillar {
@@ -18,10 +19,10 @@ export default function ValueProps({ pillars, locale }: { pillars: Pillar[]; loc
       <div className="container-site">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-5 mb-16">
           <div>
-            <p className="section-label mb-4">{locale === 'en' ? 'The Heaven Flow Difference' : 'La Diferencia Heaven Flow'}</p>
-            <h2 className="font-display text-display-lg text-soul font-light max-w-[16ch]">{locale === 'en' ? 'A day designed to be felt.' : 'Un día diseñado para sentirse.'}</h2>
+            <p className="section-label mb-4">{t(locale, { en: 'The Heaven Flow Difference', es: 'La Diferencia Heaven Flow', fa: 'تفاوت هیون فلو' })}</p>
+            <h2 className="font-display text-display-lg text-soul font-light max-w-[16ch]">{t(locale, { en: 'A day designed to be felt.', es: 'Un día diseñado para sentirse.', fa: 'روزی که باید حس شود.' })}</h2>
           </div>
-          <p className="font-body text-body-lg text-soul/65 max-w-md">{locale === 'en' ? 'Not a checklist of activities. A carefully held rhythm of movement, taste, and stillness.' : 'No es una lista de actividades. Es un ritmo cuidado de movimiento, sabor y quietud.'}</p>
+          <p className="font-body text-body-lg text-soul/65 max-w-md">{t(locale, { en: 'Not a checklist of activities. A carefully held rhythm of movement, taste, and stillness.', es: 'No es una lista de actividades. Es un ritmo cuidado de movimiento, sabor y quietud.', fa: 'فهرستی از فعالیت‌ها نیست. ریتمی سنجیده از حرکت، چشیدن و سکون است.' })}</p>
         </div>
         <div className="grid lg:grid-cols-3 gap-5">
           {pillars.map((pillar) => (

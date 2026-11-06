@@ -6,6 +6,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { bookingContent } from '@/src/pages/booking.content';
 import { ui } from '@/src/components/ui.copy';
+import { t } from '@/lib/utils';
 import type { Locale } from '@/types';
 
 const schema = z.object({
@@ -54,9 +55,11 @@ export default function BookPage({ params: { locale }, searchParams }: BookPageP
       if (!res.ok) throw new Error('Submission failed');
       setSubmitted(true);
     } catch {
-      setError(locale === 'en'
-        ? 'Something went wrong. Please try again or contact us directly.'
-        : 'Algo salió mal. Inténtalo de nuevo o contáctanos directamente.');
+      setError(t(locale, {
+        en: 'Something went wrong. Please try again or contact us directly.',
+        es: 'Algo salió mal. Inténtalo de nuevo o contáctanos directamente.',
+        fa: 'مشکلی پیش آمد. لطفاً دوباره تلاش کنید یا مستقیماً با ما تماس بگیرید.',
+      }));
     } finally {
       setLoading(false);
     }
@@ -67,7 +70,7 @@ export default function BookPage({ params: { locale }, searchParams }: BookPageP
     return (
       <div className="min-h-screen bg-linen flex items-center justify-center px-6">
         <div className="max-w-lg text-center py-32">
-          <p className="section-label mb-6">{locale === 'en' ? 'Confirmed' : 'Confirmado'}</p>
+          <p className="section-label mb-6">{t(locale, { en: 'Confirmed', es: 'Confirmado', fa: 'تأیید شد' })}</p>
           <h1 className="font-display text-display-xl text-soul font-light mb-6 max-w-none">{conf.heading}</h1>
           <p className="font-body text-body-lg text-soul/70 mb-12">{conf.sub}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

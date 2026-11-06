@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { t } from '@/lib/utils';
 import type { Locale } from '@/types';
 
 interface PackageTeaserProps {
@@ -35,9 +36,11 @@ export default function PackageTeaser({ label, title, description, priceFrom, ct
           <p className="font-body text-body-lg text-linen/70 max-w-prose-luxury mb-8">{description}</p>
           <p className="font-display text-3xl text-gold font-light italic mb-3">{priceFrom}</p>
           <p className="font-body text-caption text-linen/50 mb-10">
-            {locale === 'en'
-              ? 'Deposit and balance timing agreed personally before confirmation.'
-              : 'El depósito y el calendario del saldo se acuerdan personalmente antes de confirmar.'}
+            {t(locale, {
+              en: 'Deposit and balance timing agreed personally before confirmation.',
+              es: 'El depósito y el calendario del saldo se acuerdan personalmente antes de confirmar.',
+              fa: 'زمان‌بندی بیعانه و مانده پیش از تأیید به‌صورت شخصی توافق می‌شود.',
+            })}
           </p>
           <a href={cta.href} className="btn btn-primary">{cta.text}</a>
         </div>
