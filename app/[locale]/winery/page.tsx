@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Hero from '@/components/sections/Hero';
 import { wineryContent } from '@/src/pages/winery.content';
 import { siteImages } from '@/src/lib/images';
+import { formatToman, t } from '@/lib/utils';
 import type { Locale } from '@/types';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: Locale } }): Promise<Metadata> {
@@ -77,6 +78,15 @@ export default function WineryPage({ params: { locale } }: { params: { locale: L
           <div className="bg-soul p-12 rounded-sm self-start">
             <p className="section-label mb-4">{details.pricing.label}</p>
             <p className="font-display text-4xl text-linen font-light mb-2">{details.pricing.price}</p>
+            {formatToman(185) && (
+              <p className="font-body text-caption text-linen/60 mb-2">
+                {t(locale, {
+                  en: `≈ ${formatToman(185)} toman per person`,
+                  es: `≈ ${formatToman(185)} tomanes por persona`,
+                  fa: `≈ ${formatToman(185)} تومان برای هر نفر`,
+                })}
+              </p>
+            )}
             <p className="font-body text-caption text-sage mb-10">{details.pricing.privateNote}</p>
             <a href={hero.ctaHref} className="btn btn-primary w-full justify-center mb-4">{details.cta}</a>
             <a href={`/${locale}/book?type=private`} className="btn btn-ghost w-full justify-center text-xs">{details.ctaSecondary}</a>

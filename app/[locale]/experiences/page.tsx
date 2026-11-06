@@ -5,7 +5,7 @@ import BookingBanner from '@/components/sections/BookingBanner';
 import { experiencesContent } from '@/src/pages/experiences.content';
 import { homeContent } from '@/src/pages/home.content';
 import { siteImages } from '@/src/lib/images';
-import { t } from '@/lib/utils';
+import { formatToman, t } from '@/lib/utils';
 import type { Locale } from '@/types';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: Locale } }): Promise<Metadata> {
@@ -94,6 +94,15 @@ export default function ExperiencesPage({ params: { locale } }: { params: { loca
           <div className="bg-soul p-12 rounded-sm shadow-deep">
             <p className="section-label mb-4">{pricing.label}</p>
             <p className="font-display text-4xl text-linen font-light mb-2">{pricing.price}</p>
+            {formatToman(395) && (
+              <p className="font-body text-caption text-linen/60 mb-2">
+                {t(locale, {
+                  en: `≈ ${formatToman(395)} toman per person`,
+                  es: `≈ ${formatToman(395)} tomanes por persona`,
+                  fa: `≈ ${formatToman(395)} تومان برای هر نفر`,
+                })}
+              </p>
+            )}
             <p className="font-body text-caption text-sage mb-10">{pricing.note}</p>
             <a href={t(locale, { en: '/en/book', es: '/es/reservar', fa: '/fa/رزرو' })} className="btn btn-primary w-full justify-center mb-4">
               {pricing.cta}

@@ -56,6 +56,7 @@ export default async function HomePage({ params: { locale } }: { params: { local
           title={pkg.title}
           description={pkg.description}
           priceFrom={pkg.priceFrom}
+          priceEur={395}
           cta={{ text: pkg.cta, href: pkg.ctaHref }}
           imageSrc={siteImages.dayJourney}
           locale={locale}

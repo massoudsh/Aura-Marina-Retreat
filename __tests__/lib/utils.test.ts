@@ -1,4 +1,4 @@
-import { cn, formatPrice, formatDate } from '@/lib/utils';
+import { cn, formatPrice, formatDate, formatToman, EUR_TO_TOMAN_RATE } from '@/lib/utils';
 
 describe('cn()', () => {
   it('merges class names', () => {
@@ -19,6 +19,20 @@ describe('cn()', () => {
 
   it('returns empty string with no args', () => {
     expect(cn()).toBe('');
+  });
+});
+
+describe('formatToman()', () => {
+  it('returns null when no rate is configured', () => {
+    if (EUR_TO_TOMAN_RATE > 0) return;
+    expect(formatToman(395)).toBeNull();
+  });
+
+  it('converts EUR to a rounded toman figure when a rate is set', () => {
+    if (EUR_TO_TOMAN_RATE <= 0) return;
+    const result = formatToman(395);
+    expect(result).not.toBeNull();
+    expect(result).toMatch(/[۰-۹]/);
   });
 });
 

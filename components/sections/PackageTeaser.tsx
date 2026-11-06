@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { t } from '@/lib/utils';
+import { formatToman, t } from '@/lib/utils';
 import type { Locale } from '@/types';
 
 interface PackageTeaserProps {
@@ -7,12 +7,14 @@ interface PackageTeaserProps {
   title: string;
   description: string;
   priceFrom: string;
+  priceEur?: number;
   cta: { text: string; href: string };
   imageSrc: string;
   locale: Locale;
 }
 
-export default function PackageTeaser({ label, title, description, priceFrom, cta, imageSrc, locale }: PackageTeaserProps) {
+export default function PackageTeaser({ label, title, description, priceFrom, priceEur, cta, imageSrc, locale }: PackageTeaserProps) {
+  const toman = priceEur === undefined ? null : formatToman(priceEur);
   return (
     <section className="section-padding bg-soul">
       <div className="container-site grid lg:grid-cols-2 gap-16 items-center">
@@ -35,6 +37,15 @@ export default function PackageTeaser({ label, title, description, priceFrom, ct
           <h2 className="font-display text-display-lg text-linen font-light mb-6 max-w-none">{title}</h2>
           <p className="font-body text-body-lg text-linen/70 max-w-prose-luxury mb-8">{description}</p>
           <p className="font-display text-3xl text-gold font-light italic mb-3">{priceFrom}</p>
+          {toman && (
+            <p className="font-body text-caption text-linen/60 mb-3">
+              {t(locale, {
+                en: `≈ ${toman} toman per person`,
+                es: `≈ ${toman} tomanes por persona`,
+                fa: `≈ ${toman} تومان برای هر نفر`,
+              })}
+            </p>
+          )}
           <p className="font-body text-caption text-linen/50 mb-10">
             {t(locale, {
               en: 'Deposit and balance timing agreed personally before confirmation.',
